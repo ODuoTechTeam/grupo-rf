@@ -1,0 +1,288 @@
+"use client";
+
+import {
+  IconLineDashed,
+  IconCircleCheck,
+  IconFileCheck,
+  IconClipboardCheck,
+  IconTool,
+  IconDroplet,
+  IconFlask,
+  IconNotes,
+  IconBuildingSkyscraper,
+  IconBuildingFactory2,
+  IconHelmet,
+  IconStack2,
+} from "@tabler/icons-react";
+import {
+  Hospital,
+  ArrowLeftRight,
+  CircleDot,
+} from "lucide-react";
+import Breadcrumb from "@/components/ui/Breadcrumb";
+import SectionTitle from "@/components/ui/SectionTitle";
+import CTASection from "@/components/sections/CTASection";
+import ProcessSteps from "@/components/sections/ProcessSteps";
+
+const processSteps = [
+  {
+    icon: IconClipboardCheck,
+    title: "Projeto",
+    description:
+      "Elaboração do projeto técnico personalizado, dimensionando o sistema de linha de vida conforme a estrutura e necessidades do local.",
+  },
+  {
+    icon: IconStack2,
+    title: "Material",
+    description:
+      "Fornecimento de todos os componentes com rastreabilidade, incluindo cabos, ancoragens, esticadores e acessórios.",
+  },
+  {
+    icon: IconTool,
+    title: "Instalação",
+    description:
+      "Instalação por equipe própria especializada, com supervisão de Engenheiro Mecânico habilitado.",
+  },
+  {
+    icon: IconDroplet,
+    title: "Impermeabilização",
+    description:
+      "Tratamento impermeabilizante em todos os pontos de fixação para preservar a integridade da estrutura.",
+  },
+  {
+    icon: IconFlask,
+    title: "Teste de Arrancamento",
+    description:
+      "Ensaio de arrancamento em todos os pontos de ancoragem, assegurando a capacidade de carga do sistema.",
+  },
+  {
+    icon: IconNotes,
+    title: "Laudo e ART",
+    description:
+      "Emissão de laudo técnico completo com memorial de cálculo e ART registrada no CREA.",
+  },
+];
+
+const lineTypes = [
+  {
+    icon: IconBuildingSkyscraper,
+    title: "Predial (Concreto)",
+    description:
+      "Sistemas de linha de vida instalados em edificações de concreto armado, ideais para manutenção de coberturas e fachadas de prédios residenciais e comerciais.",
+  },
+  {
+    icon: IconBuildingFactory2,
+    title: "Industriais",
+    description:
+      "Linhas de vida projetadas para ambientes industriais, atendendo às necessidades específicas de plantas fabris, refinarias e usinas.",
+  },
+  {
+    icon: Hospital,
+    title: "Internas",
+    description:
+      "Sistemas internos para hospitais, shopping centers, galpões e edificações que necessitam de acesso seguro a áreas elevadas em ambientes fechados.",
+  },
+  {
+    icon: ArrowLeftRight,
+    title: "Flexível",
+    description:
+      "Sistema com cabo de aço flexível, ideal para grandes vãos e coberturas. Permite movimentação lateral do trabalhador ao longo de toda a extensão.",
+  },
+  {
+    icon: CircleDot,
+    title: "Rígida Monovia",
+    description:
+      "Sistema com trilho rígido (monovia) em alumínio ou aço, indicado para locais com necessidade de transposição contínua e alta frequência de uso.",
+  },
+];
+
+const applications = [
+  { label: "Edifícios residenciais e comerciais", icon: IconBuildingSkyscraper },
+  { label: "Galpões e armazéns", icon: IconBuildingFactory2 },
+  { label: "Hospitais e centros de saúde", icon: Hospital },
+  { label: "Canteiros de obra", icon: IconHelmet },
+  { label: "Instalações industriais", icon: IconBuildingFactory2 },
+];
+
+export default function LinhaDeVidaPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 bg-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent" />
+        <div className="relative max-w-7xl mx-auto px-6">
+          <Breadcrumb
+            items={[
+              { label: "RF Engenharia", href: "/rf-engenharia" },
+              { label: "Linha de Vida" },
+            ]}
+          />
+
+          <div className="mt-8 flex flex-col lg:flex-row gap-12 items-start">
+            <div className="flex-1">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="w-14 h-14 rounded-2xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center">
+                  <IconLineDashed className="w-7 h-7 text-primary-medium" />
+                </div>
+                <span className="px-4 py-1.5 text-sm font-semibold tracking-wider uppercase rounded-full bg-primary-pale text-primary-medium border border-primary-medium/30">
+                  RF Engenharia
+                </span>
+              </div>
+
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-display)] text-gray-900 mb-6">
+                Linha de{" "}
+                <span className="text-primary-medium">Vida</span>
+              </h1>
+
+              <p className="text-lg text-text-light leading-relaxed max-w-2xl mb-8">
+                Projeto, fabricação e instalação de sistemas de linha de vida
+                para edifícios, indústrias, galpões, hospitais e canteiros
+                de obra. Oferecemos soluções completas com sistemas flexíveis
+                e rígidos, garantindo a segurança dos trabalhadores em altura.
+              </p>
+
+              <div className="flex flex-wrap gap-3">
+                <span className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-text-light">
+                  <IconCircleCheck className="w-4 h-4 text-primary-medium inline mr-2" />
+                  Projeto personalizado
+                </span>
+                <span className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-text-light">
+                  <IconCircleCheck className="w-4 h-4 text-primary-medium inline mr-2" />
+                  Fabricação própria
+                </span>
+                <span className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-text-light">
+                  <IconCircleCheck className="w-4 h-4 text-primary-medium inline mr-2" />
+                  Laudo e ART
+                </span>
+              </div>
+            </div>
+
+            <div className="lg:w-96 w-full p-6 rounded-2xl bg-white border border-gray-200">
+              <h3 className="text-lg font-semibold font-[family-name:var(--font-display)] text-gray-900 mb-4">
+                Onde Atendemos
+              </h3>
+              <ul className="space-y-3">
+                {applications.map((app) => {
+                  const AppIcon = app.icon;
+                  return (
+                    <li key={app.label} className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-primary/10 border border-primary-medium/20 flex items-center justify-center shrink-0">
+                        <AppIcon className="w-4 h-4 text-primary-medium" />
+                      </div>
+                      <span className="text-text-light text-sm">
+                        {app.label}
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Content */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionTitle
+            badge="Sobre o Serviço"
+            title="Sistemas de Linha de Vida Completos"
+            description="Projetamos, fabricamos e instalamos sistemas de linha de vida sob medida para cada tipo de edificação e necessidade operacional."
+            align="center"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+            <div className="p-6 rounded-2xl bg-white border border-gray-100">
+              <h3 className="text-xl font-semibold font-[family-name:var(--font-display)] text-gray-900 mb-4">
+                O que é uma Linha de Vida?
+              </h3>
+              <p className="text-text-light leading-relaxed mb-4">
+                A linha de vida é um sistema de proteção contra quedas que
+                permite ao trabalhador se deslocar com segurança em áreas
+                elevadas. Consiste em um cabo de aço ou trilho fixado à
+                estrutura por meio de ancoragens, ao qual o trabalhador
+                conecta seu dispositivo de proteção individual.
+              </p>
+              <p className="text-text-light leading-relaxed">
+                A RF Engenharia oferece soluções completas, desde o projeto
+                técnico até a emissão de laudo e ART, passando pela fabricação
+                dos componentes, instalação por equipe própria e testes de
+                arrancamento em todos os pontos de fixação.
+              </p>
+            </div>
+
+            <div className="p-6 rounded-2xl bg-white border border-gray-100">
+              <h3 className="text-xl font-semibold font-[family-name:var(--font-display)] text-gray-900 mb-4">
+                Nossos Diferenciais
+              </h3>
+              <ul className="space-y-3">
+                {[
+                  "Projeto técnico com memorial de cálculo",
+                  "Fabricação própria de componentes",
+                  "Equipe própria supervisionada por Engenheiro",
+                  "Sistemas flexíveis e rígidos (monovia)",
+                  "Teste de arrancamento em todos os pontos",
+                  "Impermeabilização dos pontos de fixação",
+                  "Laudo técnico e ART registrada no CREA",
+                  "Conformidade com NR-18 e NR-35",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0 mt-0.5" />
+                    <span className="text-text-light text-sm">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Steps */}
+      <ProcessSteps
+        title="Processo de Instalação"
+        description="Seguimos um processo rigoroso desde o projeto até a entrega da documentação técnica completa."
+        steps={processSteps}
+      />
+
+      {/* Types of Lifelines */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6">
+          <SectionTitle
+            badge="Tipos de Linha de Vida"
+            title="Soluções para Cada Necessidade"
+            description="Oferecemos diferentes tipos de sistemas de linha de vida, adaptados às características de cada edificação e ambiente de trabalho."
+            align="center"
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {lineTypes.map((type) => {
+              const TypeIcon = type.icon;
+              return (
+                <div
+                  key={type.title}
+                  className="p-6 rounded-xl bg-white border border-gray-100 hover:border-primary-medium/30 transition-all group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center mb-4 group-hover:bg-primary-medium/30 transition-colors">
+                    <TypeIcon className="w-6 h-6 text-primary-medium" />
+                  </div>
+                  <h3 className="text-lg font-semibold font-[family-name:var(--font-display)] text-gray-900 mb-2">
+                    {type.title}
+                  </h3>
+                  <p className="text-sm text-text-light leading-relaxed">
+                    {type.description}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <CTASection
+        title="Precisa de um sistema de linha de vida?"
+        description="Entre em contato para um projeto personalizado com instalação completa e documentação técnica."
+      />
+    </>
+  );
+}
