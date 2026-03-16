@@ -33,7 +33,7 @@ const processSteps = [
     icon: IconStack2,
     title: "Material",
     description:
-      "Fornecimento de material em aço inoxidável rastreável com chumbador químico de alta performance.",
+      "Fornecimento de material em aço inox 304/316 rastreável, com certificado de fabricação, composição química e ART de fabricação. Chumbador químico de alta performance.",
   },
   {
     icon: IconTool,
@@ -64,9 +64,9 @@ const processSteps = [
 const features = [
   {
     icon: IconShieldCheck,
-    title: "Aço Inoxidável Rastreável",
+    title: "Aço Inox 304 ou 316",
     description:
-      "Material de primeira qualidade com rastreabilidade completa, garantindo durabilidade e resistência a corrosão.",
+      "Olhal de ancoragem fabricado em aço inox 304 ou 316, com certificado de resistência a corrosão emitido por laboratório e rastreabilidade completa.",
   },
   {
     icon: IconFlask,
@@ -76,9 +76,9 @@ const features = [
   },
   {
     icon: IconRosetteDiscountCheck,
-    title: "Resistência 2.500 kgf",
+    title: "Ruptura Superior a 7.850 kgf",
     description:
-      "Cada ponto de ancoragem é projetado e testado para suportar carga mínima de 2.500 kgf conforme norma.",
+      "Carga de ruptura superior a 7.850 kgf comprovada por ensaio de tração em laboratório — muito acima dos 2.500 kgf exigidos por norma.",
   },
   {
     icon: IconTestPipe,
@@ -148,23 +148,23 @@ export default function AncoragemPredialPage() {
               <p className="text-lg text-text-light leading-relaxed max-w-2xl mb-8">
                 Instalação de pontos de ancoragem em edificações para fixação
                 de equipamentos de acesso a fachada, como balancins,
-                cadeirinhas e SPIQ (Sistema de Proteção Individual contra
-                Quedas). Sistema fixo em aço inoxidável, rastreável, com
-                resistência mínima de 2.500 kgf por ponto.
+                cadeirinhas e SPIQ. Sistema fixo em aço inox 304/316 com
+                carga de ruptura superior a 7.850 kgf, garantia de 5 anos
+                e certificação completa. Somos fabricantes.
               </p>
 
               <div className="flex flex-wrap gap-3">
                 <span className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-text-light">
                   <IconCircleCheck className="w-4 h-4 text-primary-medium inline mr-2" />
-                  Teste 100% dos pontos
+                  Aço inox 304/316
                 </span>
                 <span className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-text-light">
                   <IconCircleCheck className="w-4 h-4 text-primary-medium inline mr-2" />
-                  Aço inoxidável rastreável
+                  Garantia de 5 anos
                 </span>
                 <span className="px-4 py-2 rounded-lg bg-white border border-gray-200 text-sm text-text-light">
                   <IconCircleCheck className="w-4 h-4 text-primary-medium inline mr-2" />
-                  Laudo técnico e ART
+                  Ruptura 7.850 kgf
                 </span>
               </div>
             </div>
@@ -214,11 +214,23 @@ export default function AncoragemPredialPage() {
                 trabalho em fachada, como balancins suspensos, cadeirinhas de
                 rapel e sistemas SPIQ.
               </p>
-              <p className="text-text-light leading-relaxed">
-                Cada ponto de ancoragem é fabricado em aço inoxidável com
-                rastreabilidade de lote, fixado com chumbador químico de
+              <p className="text-text-light leading-relaxed mb-4">
+                Cada ponto de ancoragem é fabricado em{" "}
+                <strong className="text-gray-900">aço inox 304 ou 316</strong>,
+                com rastreabilidade de lote, fixado com chumbador químico de
                 alto desempenho e submetido a teste de arrancamento
-                individual, garantindo resistência mínima de 2.500 kgf.
+                individual. Nosso olhal de ancoragem possui{" "}
+                <strong className="text-gray-900">carga de ruptura superior a 7.850 kgf</strong>,
+                comprovada por ensaio de tração em laboratório — muito acima
+                dos 2.500 kgf exigidos por norma.
+              </p>
+              <p className="text-text-light leading-relaxed">
+                O material acompanha <strong className="text-gray-900">certificado de resistência
+                a corrosão</strong> emitido por laboratório, certificado de
+                fabricação e composição química, ART de fabricação e{" "}
+                <strong className="text-gray-900">garantia de 5 anos</strong>.
+                Atendimento às normas NR-18, NR-35, NBR 16325-1, NR 10/2015-CBMDF
+                e Portaria 157/2006.
               </p>
             </div>
 
@@ -228,14 +240,16 @@ export default function AncoragemPredialPage() {
               </h3>
               <ul className="space-y-3">
                 {[
+                  "Somos fabricantes e distribuidores do olhal de ancoragem",
                   "Equipe própria supervisionada por Engenheiro Mecânico",
-                  "Material em aço inoxidável com rastreabilidade completa",
-                  "Chumbador químico de alta performance",
+                  "Aço inox 304/316 com certificado de composição química",
+                  "Carga de ruptura superior a 7.850 kgf comprovada em laboratório",
+                  "Garantia de 5 anos do material",
                   "Teste de arrancamento em 100% dos pontos instalados",
                   "Laudo técnico detalhado e ART registrada no CREA",
                   "Impermeabilização de todos os pontos de fixação",
-                  "Conformidade total com Portaria 157/2006, NR-18 e NR-35",
-                  "Atendimento em todo o Brasil",
+                  "Conformidade com Portaria 157/2006, NR-18, NR-35, NBR 16325-1",
+                  "Pagamento facilitado em até 12x sem juros",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0 mt-0.5" />

@@ -33,7 +33,7 @@ export const engenhariaServices: Service[] = [
       "Projeto, fabricação e instalação de pontos de ancoragem em edifícios. Sistema fixo em aço inox com teste de arrancamento em 100% dos pontos.",
     icon: IconShieldLock,
     href: "/rf-engenharia/ancoragem-predial",
-    image: "/images/services/ancoragem-predial.jpg",
+    image: "/images/ancoragem/ancoragem-01.jpg",
     features: [
       "Aço inoxidável rastreável",
       "Resistência 2.500 kgf",
@@ -48,7 +48,7 @@ export const engenhariaServices: Service[] = [
       "Projeto, fabricação e instalação de sistemas de linha de vida prediais e industriais. Soluções para edifícios, galpões, hospitais e instalações industriais.",
     icon: IconRouteAltRight,
     href: "/rf-engenharia/linha-de-vida",
-    image: "/images/services/linha-de-vida-hero.jpg",
+    image: "/images/linha-de-vida/linha-vida-01.jpg",
     features: [
       "Predial e industrial",
       "Flexível e rígida",
@@ -63,7 +63,7 @@ export const engenhariaServices: Service[] = [
       "Projetos de construção e fabricação metálica. Coberturas, galpões, escadas marinheiro, passarelas de acesso e rampas.",
     icon: IconBuildingBridge,
     href: "/rf-engenharia/construcao-metalica",
-    image: "/images/services/construcao-metalica.jpg",
+    image: "/images/estruturas-metalicas/estrutura-metalica-01.jpg",
     features: [
       "Coberturas e galpões",
       "Escadas e passarelas",
@@ -78,7 +78,7 @@ export const engenhariaServices: Service[] = [
       "Inspeção e certificação anual de sistemas de ancoragem definitiva. Testes, revalidação de laudo e emissão de ART.",
     icon: IconZoomCheck,
     href: "/rf-engenharia/inspecao-anual",
-    image: "/images/services/ancoragem-hero.jpg",
+    image: "/images/ancoragem/ancoragem-04.jpg",
     features: [
       "Inspeção a cada 12 meses",
       "Testes de arrancamento",
@@ -93,7 +93,7 @@ export const engenhariaServices: Service[] = [
       "Treinamentos especializados em NR-10, NR-18 e NR-35 para capacitação de trabalhadores em segurança do trabalho.",
     icon: IconSchool,
     href: "/rf-engenharia/treinamentos",
-    image: "/images/services/projetos-seguranca.jpg",
+    image: "/images/ancoragem/ancoragem-05.jpg",
     features: [
       "NR-10 Eletricidade",
       "NR-18 Construção Civil",
@@ -108,7 +108,7 @@ export const engenhariaServices: Service[] = [
       "Elaboração de projetos técnicos, laudos de aterramento, PGR, auditoria e consultoria em segurança do trabalho.",
     icon: IconFileSearch,
     href: "/rf-engenharia/projetos-laudos",
-    image: "/images/services/linha-de-vida-trabalho.jpg",
+    image: "/images/linha-de-vida/linha-vida-04.jpg",
     features: [
       "Projetos de montagem",
       "Laudos técnicos",

@@ -26,7 +26,7 @@ export default function RFLocacaoPage() {
         description="Balancins elétricos, andaimes fachadeiros, elevadores cremalheira, mini-gruas e proteções coletivas. Locação com montagem, manutenção, projeto e treinamento incluso."
         primaryCTA={{ label: "Solicitar Orçamento", href: "/contato" }}
         secondaryCTA={{ label: "Ver Portfólio", href: "/portfolio" }}
-        image="/images/equipment/balancim.png"
+        image="/images/balancim/balancim-01.jpg"
         imageAlt="Balancim elétrico RF Locação"
       />
 

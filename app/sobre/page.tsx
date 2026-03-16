@@ -149,7 +149,7 @@ export default function SobrePage() {
                 <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/15 via-primary-pale to-transparent rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden shadow-xl">
                   <Image
-                    src="/images/services/linha-de-vida-galpao.jpg"
+                    src="/images/linha-de-vida/linha-vida-03.jpg"
                     alt="Instalação de linha de vida em galpão"
                     width={600}
                     height={450}

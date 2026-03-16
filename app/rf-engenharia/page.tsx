@@ -29,7 +29,7 @@ export default function RFEngenhariaPage() {
         description="Projetos, fabricação, instalação e inspeção de sistemas de ancoragem predial, linhas de vida, construção metálica e treinamentos. Conformidade total com NR-18, NR-35 e NBR 16325."
         primaryCTA={{ label: "Solicitar Orçamento", href: "/contato" }}
         secondaryCTA={{ label: "Ver Portfolio", href: "/portfolio" }}
-        image="/images/services/linha-de-vida-hero.jpg"
+        image="/images/linha-de-vida/linha-vida-01.jpg"
         imageAlt="Sistema de linha de vida RF Engenharia"
       />
 

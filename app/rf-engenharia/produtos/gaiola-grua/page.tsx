@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import {
   IconPackage,
   IconCircleCheck,
@@ -124,23 +125,43 @@ export default function GaiolaGruaPage() {
                 </Button>
               </div>
             </div>
-            <div className="shrink-0 w-full lg:w-80">
-              <div className="p-6 rounded-xl bg-white border border-gray-100">
-                <div className="w-16 h-16 rounded-xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center mb-4">
-                  <IconPackage className="w-8 h-8 text-primary-medium" />
+            <div className="shrink-0 w-full lg:w-96">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
+                <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
+                <div className="relative rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/estruturas-metalicas/estrutura-metalica-02.jpg"
+                    alt="Gaiola para Grua"
+                    width={500}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                  />
                 </div>
-                <h3 className="text-lg font-bold font-[family-name:var(--font-display)] text-gray-900 mb-3">
-                  Materiais Transportados
-                </h3>
-                <ul className="space-y-2">
-                  {materials.map((item) => (
-                    <li key={item} className="flex items-start gap-2">
-                      <IconCircleCheck className="w-4 h-4 text-primary-medium shrink-0 mt-0.5" />
-                      <span className="text-sm text-text-light">{item}</span>
-                    </li>
-                  ))}
-                </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Kit Contents / Specs */}
+      <section className="py-12 bg-white border-t border-gray-100">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex items-center gap-3">
+              <div className="w-12 h-12 rounded-xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center">
+                <IconPackage className="w-6 h-6 text-primary-medium" />
+              </div>
+              <h3 className="text-lg font-bold font-[family-name:var(--font-display)] text-gray-900">
+                O que inclui
+              </h3>
+            </div>
+            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
+              {materials.map((item) => (
+                <div key={item} className="flex items-start gap-2">
+                  <IconCircleCheck className="w-4 h-4 text-primary-medium shrink-0 mt-0.5" />
+                  <span className="text-sm text-text-light">{item}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>

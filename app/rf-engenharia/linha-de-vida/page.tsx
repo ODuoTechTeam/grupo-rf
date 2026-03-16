@@ -18,6 +18,7 @@ import {
   Hospital,
   ArrowLeftRight,
   CircleDot,
+  Plane,
 } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -102,6 +103,7 @@ const applications = [
   { label: "Hospitais e centros de saúde", icon: Hospital },
   { label: "Canteiros de obra", icon: IconHelmet },
   { label: "Instalações industriais", icon: IconBuildingFactory2 },
+  { label: "Aeroportos", icon: Plane },
 ];
 
 export default function LinhaDeVidaPage() {
@@ -135,10 +137,11 @@ export default function LinhaDeVidaPage() {
               </h1>
 
               <p className="text-lg text-text-light leading-relaxed max-w-2xl mb-8">
-                Projeto, fabricação e instalação de sistemas de linha de vida
-                para edifícios, indústrias, galpões, hospitais e canteiros
-                de obra. Oferecemos soluções completas com sistemas flexíveis
-                e rígidos, garantindo a segurança dos trabalhadores em altura.
+                Especialistas em sistemas de prevenção contra queda em altura.
+                Projetamos, fabricamos e instalamos sistemas de linha de vida
+                para edifícios, galpões, indústrias, hospitais e até
+                aeroportos. Soluções completas com sistemas flexíveis e
+                rígidos, do projeto à documentação técnica.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -187,7 +190,7 @@ export default function LinhaDeVidaPage() {
           <SectionTitle
             badge="Sobre o Serviço"
             title="Sistemas de Linha de Vida Completos"
-            description="Projetamos, fabricamos e instalamos sistemas de linha de vida sob medida para cada tipo de edificação e necessidade operacional."
+            description="Especialistas em prevenção contra queda em altura desde 2006. Projetamos, fabricamos e instalamos sistemas de linha de vida para edifícios, galpões, indústrias, hospitais e aeroportos, sob medida para cada necessidade operacional."
             align="center"
           />
 
@@ -204,10 +207,13 @@ export default function LinhaDeVidaPage() {
                 conecta seu dispositivo de proteção individual.
               </p>
               <p className="text-text-light leading-relaxed">
-                A RF Engenharia oferece soluções completas, desde o projeto
-                técnico até a emissão de laudo e ART, passando pela fabricação
-                dos componentes, instalação por equipe própria e testes de
-                arrancamento em todos os pontos de fixação.
+                Somos especialistas em sistemas de prevenção contra queda em
+                altura. A RF Engenharia projeta, fabrica e instala sistemas
+                de linha de vida para edifícios, galpões, indústrias,
+                hospitais e até aeroportos — com projeto técnico, memorial de
+                cálculo, fabricação própria dos componentes, instalação por
+                equipe supervisionada e testes de arrancamento em todos os
+                pontos de fixação. Laudo técnico e ART registrada no CREA.
               </p>
             </div>
 

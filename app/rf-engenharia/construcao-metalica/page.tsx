@@ -154,11 +154,11 @@ export default function ConstrucaoMetalicaPage() {
               </h1>
 
               <p className="text-lg text-text-light leading-relaxed max-w-2xl mb-8">
-                Projetos de construção e fabricação metálica com infraestrutura
-                própria de serralheria e solda. Executamos telhados, galpões,
-                escadas marinheiro, passarelas de acesso e rampas com equipe
-                própria supervisionada por Engenheiro Mecânico e equipamentos
-                de última geração.
+                Projetamos e fabricamos diversos sistemas metálicos — coberturas,
+                galpões, escadas, plataformas de acesso e rampas — com
+                infraestrutura completa de serralheria e metalúrgica equipada
+                com maquinário de ponta. Equipe própria supervisionada pelo
+                Engenheiro Mecânico responsável, do projeto à instalação.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -216,7 +216,7 @@ export default function ConstrucaoMetalicaPage() {
           <SectionTitle
             badge="Sobre o Serviço"
             title="Soluções Completas em Estrutura Metálica"
-            description="Da concepção do projeto à instalação final, oferecemos um serviço integrado com fabricação própria e equipe especializada."
+            description="Dispomos de toda infraestrutura de serralheria e metalúrgica com equipamentos de ponta, equipe própria supervisionada pelo Engenheiro Mecânico responsável. Da concepção do projeto à instalação final, um serviço integrado."
             align="center"
           />
 
@@ -257,7 +257,7 @@ export default function ConstrucaoMetalicaPage() {
           <SectionTitle
             badge="Aplicações"
             title="O que Fabricamos e Instalamos"
-            description="Atendemos diversas demandas de construção metálica com projetos personalizados para cada aplicação."
+            description="Projetamos e fabricamos diversos sistemas metálicos com projetos personalizados para cada aplicação, incluindo docas com linha de vida integrada."
             align="center"
           />
 

@@ -30,11 +30,11 @@ export default function Home() {
         badge="Desde 2006 protegendo vidas"
         title="Segurança Inteligente que"
         highlight="Salva Vidas"
-        description="Trabalhamos para tornar sua obra mais segura e valorizar o seu projeto. Especialistas em prevenção contra quedas em altura, com projetos, fabricação, instalação e locação de equipamentos."
+        description="Desde 2006, atuamos no mercado de projetos, consultoria, fabricação e instalação de sistemas de segurança do trabalho — especialmente prevenção contra queda em altura. Tornamos sua obra mais segura e valorizamos seu projeto."
         primaryCTA={{ label: "Solicitar Visita Técnica", href: "/contato" }}
         secondaryCTA={{ label: "Conheça Nossos Serviços", href: "/rf-engenharia" }}
         showStats
-        image="/images/services/ancoragem-predial.jpg"
+        image="/images/ancoragem/ancoragem-01.jpg"
         imageAlt="Sistema de ancoragem predial RF Engenharia"
       />
 
@@ -152,7 +152,7 @@ export default function Home() {
           <SectionTitle
             badge="RF Engenharia"
             title="Serviços de Engenharia"
-            description="Projetos, consultoria, fabricação e instalação de sistemas de segurança do trabalho em altura."
+            description="Atuantes no mercado de projetos, consultoria, fabricação e instalação de sistemas de segurança do trabalho, especialmente prevenção contra queda em altura."
           />
 
           <StaggerContainer staggerDelay={0.1} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

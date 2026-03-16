@@ -20,8 +20,8 @@ const showcaseItems: ShowcaseItem[] = [
     title: "Ancoragem Predial — Shopping Conjunto Nacional",
     description:
       "Instalação de 378 pontos de ancoragem para reforma de fachada. Sistema completo com linha de vida horizontal e pontos tipo A e B.",
-    beforeImage: "/images/services/ancoragem-hero.jpg",
-    afterImage: "/images/services/ancoragem-predial.jpg",
+    beforeImage: "/images/ancoragem/ancoragem-04.jpg",
+    afterImage: "/images/ancoragem/ancoragem-01.jpg",
     beforeLabel: "Fachada sem proteção",
     afterLabel: "Com sistema de ancoragem",
     stats: "378 pontos instalados",
@@ -30,8 +30,8 @@ const showcaseItems: ShowcaseItem[] = [
     title: "Linha de Vida — Galpão Industrial Heineken",
     description:
       "Projeto e instalação de linha de vida horizontal para substituição de telhado. Sistema permite trânsito seguro em toda a cobertura.",
-    beforeImage: "/images/services/construcao-metalica.jpg",
-    afterImage: "/images/services/linha-de-vida-galpao.jpg",
+    beforeImage: "/images/estruturas-metalicas/estrutura-metalica-01.jpg",
+    afterImage: "/images/linha-de-vida/linha-vida-03.jpg",
     beforeLabel: "Cobertura sem proteção",
     afterLabel: "Com linha de vida",
     stats: "3.200m de cabo instalados",
@@ -40,8 +40,8 @@ const showcaseItems: ShowcaseItem[] = [
     title: "Sistema de Segurança — TCU Brasília",
     description:
       "1.480m de linha de vida + 423 pontos de ancoragem instalados nos Edifícios Sede e Anexos I, II e III do Tribunal de Contas da União.",
-    beforeImage: "/images/services/linha-de-vida-hero.jpg",
-    afterImage: "/images/services/linha-de-vida-predial.jpeg",
+    beforeImage: "/images/linha-de-vida/linha-vida-01.jpg",
+    afterImage: "/images/linha-de-vida/linha-vida-02.jpg",
     beforeLabel: "Edifício sem sistema",
     afterLabel: "Proteção completa",
     stats: "1.480m de linha de vida",

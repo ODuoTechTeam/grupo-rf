@@ -31,7 +31,7 @@ export const locacaoEquipments: Equipment[] = [
     icon: IconCrane,
     href: "/rf-locacao/balancim-eletrico",
     badge: "Mais Procurado",
-    image: "/images/equipment/balancim.png",
+    image: "/images/balancim/balancim-01.jpg",
     features: [
       "Comandos motorizados",
       "Plataforma estável",
