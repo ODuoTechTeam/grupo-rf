@@ -65,8 +65,6 @@ export default function Header() {
             <span>Goiânia</span>
             <span className="text-text-medium">|</span>
             <span>São Paulo</span>
-            <span className="text-text-medium">|</span>
-            <span>Belo Horizonte</span>
           </div>
         </div>
       </motion.div>

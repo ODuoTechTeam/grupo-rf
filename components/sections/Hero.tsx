@@ -194,9 +194,9 @@ export default function Hero({
         {showStats && (
           <div className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
             {[
-              { value: "15+", label: "Anos de mercado" },
+              { value: "20+", label: "Anos de mercado" },
               { value: "500+", label: "Projetos realizados" },
-              { value: "4", label: "Unidades no Brasil" },
+              { value: "3", label: "Unidades no Brasil" },
               { value: "100%", label: "Conformidade" },
             ].map((stat, i) => (
               <motion.div

@@ -46,7 +46,7 @@ const milestones = [
   {
     year: "2017",
     title: "Cobertura Nacional",
-    description: "Expansão para São Paulo e Belo Horizonte, consolidando atendimento em todo o território nacional.",
+    description: "Expansão para São Paulo e Goiânia, consolidando atendimento em todo o território nacional.",
   },
   {
     year: "2019",
@@ -123,7 +123,7 @@ export default function SobrePage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-[family-name:var(--font-display)] leading-tight mb-6 text-gray-900">
                 Protegendo Vidas{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-light to-primary-accent">
-                  há mais de 18 Anos
+                  há mais de 20 Anos
                 </span>
               </h1>
 
@@ -136,8 +136,7 @@ export default function SobrePage() {
               </p>
 
               <p className="text-lg text-text-light leading-relaxed">
-                Hoje, com unidades em Brasília, Goiânia, São Paulo e Belo
-                Horizonte, oferecemos cobertura nacional com equipe própria,
+                Hoje, com unidades em Brasília, Goiânia e São Paulo, oferecemos cobertura nacional com equipe própria,
                 fabricação interna e atendimento especializado. Nosso compromisso é
                 entregar soluções de engenharia que protegem vidas e valorizam cada
                 projeto.

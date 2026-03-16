@@ -51,7 +51,7 @@ const processSteps = [
     icon: IconFlask,
     title: "Teste de Arrancamento",
     description:
-      "Teste de arrancamento em 100% dos pontos instalados, assegurando resistência mínima de 1.500 kgf.",
+      "Teste de arrancamento em 100% dos pontos instalados, assegurando resistência mínima de 2.500 kgf.",
   },
   {
     icon: IconNotes,
@@ -76,9 +76,9 @@ const features = [
   },
   {
     icon: IconRosetteDiscountCheck,
-    title: "Resistência 1.500 kgf",
+    title: "Resistência 2.500 kgf",
     description:
-      "Cada ponto de ancoragem é projetado e testado para suportar carga mínima de 1.500 kgf conforme norma.",
+      "Cada ponto de ancoragem é projetado e testado para suportar carga mínima de 2.500 kgf conforme norma.",
   },
   {
     icon: IconTestPipe,
@@ -150,7 +150,7 @@ export default function AncoragemPredialPage() {
                 de equipamentos de acesso a fachada, como balancins,
                 cadeirinhas e SPIQ (Sistema de Proteção Individual contra
                 Quedas). Sistema fixo em aço inoxidável, rastreável, com
-                resistência mínima de 1.500 kgf por ponto.
+                resistência mínima de 2.500 kgf por ponto.
               </p>
 
               <div className="flex flex-wrap gap-3">
@@ -218,7 +218,7 @@ export default function AncoragemPredialPage() {
                 Cada ponto de ancoragem é fabricado em aço inoxidável com
                 rastreabilidade de lote, fixado com chumbador químico de
                 alto desempenho e submetido a teste de arrancamento
-                individual, garantindo resistência mínima de 1.500 kgf.
+                individual, garantindo resistência mínima de 2.500 kgf.
               </p>
             </div>
 

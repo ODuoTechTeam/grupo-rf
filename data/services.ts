@@ -36,7 +36,7 @@ export const engenhariaServices: Service[] = [
     image: "/images/services/ancoragem-predial.jpg",
     features: [
       "Aço inoxidável rastreável",
-      "Resistência 1.500 kgf",
+      "Resistência 2.500 kgf",
       "Teste de arrancamento 100%",
       "Laudo técnico e ART",
     ],

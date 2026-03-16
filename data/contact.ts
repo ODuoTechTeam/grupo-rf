@@ -31,13 +31,6 @@ export const offices: Office[] = [
     cep: "06705-030",
     mapQuery: "Rodovia+Raposo+Tavares+km+18+Cotia+SP",
   },
-  {
-    city: "Belo Horizonte",
-    state: "MG",
-    phones: ["(31) 3157-1707"],
-    address: "",
-    mapQuery: "Belo+Horizonte+MG",
-  },
 ];
 
 export const contact = {
