@@ -2,6 +2,7 @@ export interface NavItem {
   label: string;
   href: string;
   children?: NavItem[];
+  group?: string;
 }
 
 export const navigation: NavItem[] = [
@@ -11,24 +12,18 @@ export const navigation: NavItem[] = [
     label: "RF Engenharia",
     href: "/rf-engenharia",
     children: [
-      { label: "Ancoragem Predial", href: "/rf-engenharia/ancoragem-predial" },
-      { label: "Linha de Vida", href: "/rf-engenharia/linha-de-vida" },
-      { label: "Construção Metálica", href: "/rf-engenharia/construcao-metalica" },
-      { label: "Inspeção Anual", href: "/rf-engenharia/inspecao-anual" },
-      { label: "Treinamentos", href: "/rf-engenharia/treinamentos" },
-      { label: "Projetos e Laudos", href: "/rf-engenharia/projetos-laudos" },
-      {
-        label: "Produtos",
-        href: "/rf-engenharia/produtos",
-        children: [
-          { label: "Kit Linha de Vida para Telhados", href: "/rf-engenharia/produtos/kit-linha-vida-telhados" },
-          { label: "Linha de Vida para Concretagem", href: "/rf-engenharia/produtos/linha-vida-concretagem" },
-          { label: "Linha de Vida para Escadas Marinheiro", href: "/rf-engenharia/produtos/linha-vida-escadas-marinheiro" },
-          { label: "Escada Marinheiro", href: "/rf-engenharia/produtos/escada-marinheiro" },
-          { label: "Gaiola para Grua", href: "/rf-engenharia/produtos/gaiola-grua" },
-          { label: "Plataforma de Grua", href: "/rf-engenharia/produtos/plataforma-grua" },
-        ],
-      },
+      { label: "Ancoragem Predial", href: "/rf-engenharia/ancoragem-predial", group: "Serviços" },
+      { label: "Linha de Vida", href: "/rf-engenharia/linha-de-vida", group: "Serviços" },
+      { label: "Construção Metálica", href: "/rf-engenharia/construcao-metalica", group: "Serviços" },
+      { label: "Inspeção Anual", href: "/rf-engenharia/inspecao-anual", group: "Serviços" },
+      { label: "Treinamentos", href: "/rf-engenharia/treinamentos", group: "Serviços" },
+      { label: "Projetos e Laudos", href: "/rf-engenharia/projetos-laudos", group: "Serviços" },
+      { label: "Kit Linha de Vida para Telhados", href: "/rf-engenharia/produtos/kit-linha-vida-telhados", group: "Produtos" },
+      { label: "Linha de Vida para Concretagem", href: "/rf-engenharia/produtos/linha-vida-concretagem", group: "Produtos" },
+      { label: "Linha de Vida para Escadas Marinheiro", href: "/rf-engenharia/produtos/linha-vida-escadas-marinheiro", group: "Produtos" },
+      { label: "Escada Marinheiro", href: "/rf-engenharia/produtos/escada-marinheiro", group: "Produtos" },
+      { label: "Gaiola para Grua", href: "/rf-engenharia/produtos/gaiola-grua", group: "Produtos" },
+      { label: "Plataforma de Grua", href: "/rf-engenharia/produtos/plataforma-grua", group: "Produtos" },
     ],
   },
   {

@@ -1,10 +1,10 @@
 import {
-  IconAnchor,
-  IconLineDashed,
+  IconShieldLock,
+  IconRouteAltRight,
   IconBuildingBridge,
-  IconClipboardCheck,
-  IconCertificate,
-  IconFileAnalytics,
+  IconZoomCheck,
+  IconSchool,
+  IconFileSearch,
   IconHome,
   IconWall,
   IconLadder,
@@ -31,7 +31,7 @@ export const engenhariaServices: Service[] = [
     slug: "ancoragem-predial",
     description:
       "Projeto, fabricação e instalação de pontos de ancoragem em edifícios. Sistema fixo em aço inox com teste de arrancamento em 100% dos pontos.",
-    icon: IconAnchor,
+    icon: IconShieldLock,
     href: "/rf-engenharia/ancoragem-predial",
     image: "/images/services/ancoragem-predial.jpg",
     features: [
@@ -46,7 +46,7 @@ export const engenhariaServices: Service[] = [
     slug: "linha-de-vida",
     description:
       "Projeto, fabricação e instalação de sistemas de linha de vida prediais e industriais. Soluções para edifícios, galpões, hospitais e instalações industriais.",
-    icon: IconLineDashed,
+    icon: IconRouteAltRight,
     href: "/rf-engenharia/linha-de-vida",
     image: "/images/services/linha-de-vida-hero.jpg",
     features: [
@@ -76,7 +76,7 @@ export const engenhariaServices: Service[] = [
     slug: "inspecao-anual",
     description:
       "Inspeção e certificação anual de sistemas de ancoragem definitiva. Testes, revalidação de laudo e emissão de ART.",
-    icon: IconClipboardCheck,
+    icon: IconZoomCheck,
     href: "/rf-engenharia/inspecao-anual",
     image: "/images/services/ancoragem-hero.jpg",
     features: [
@@ -91,7 +91,7 @@ export const engenhariaServices: Service[] = [
     slug: "treinamentos",
     description:
       "Treinamentos especializados em NR-10, NR-18 e NR-35 para capacitação de trabalhadores em segurança do trabalho.",
-    icon: IconCertificate,
+    icon: IconSchool,
     href: "/rf-engenharia/treinamentos",
     image: "/images/services/projetos-seguranca.jpg",
     features: [
@@ -106,7 +106,7 @@ export const engenhariaServices: Service[] = [
     slug: "projetos-laudos",
     description:
       "Elaboração de projetos técnicos, laudos de aterramento, PGR, auditoria e consultoria em segurança do trabalho.",
-    icon: IconFileAnalytics,
+    icon: IconFileSearch,
     href: "/rf-engenharia/projetos-laudos",
     image: "/images/services/linha-de-vida-trabalho.jpg",
     features: [

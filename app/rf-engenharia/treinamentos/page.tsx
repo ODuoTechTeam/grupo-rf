@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 import {
-  IconCertificate,
+  IconSchool,
   IconHelmet,
   IconCircleCheck,
   IconUsersGroup,
@@ -149,7 +149,7 @@ export default function TreinamentosPage() {
           <div className="mt-8 max-w-3xl">
             <div className="inline-flex items-center gap-3 mb-6">
               <div className="w-14 h-14 rounded-2xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center">
-                <IconCertificate className="w-7 h-7 text-primary-medium" />
+                <IconSchool className="w-7 h-7 text-primary-medium" />
               </div>
               <span className="px-4 py-1.5 text-sm font-semibold tracking-wider uppercase rounded-full bg-primary-pale text-primary-medium border border-primary-medium/30">
                 RF Engenharia

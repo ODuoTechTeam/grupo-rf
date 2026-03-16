@@ -121,34 +121,62 @@ export default function Header() {
                     transition={{ duration: 0.2, ease: "easeOut" }}
                     className="absolute top-full left-0 mt-1 w-64 bg-white backdrop-blur-xl border border-gray-200 rounded-xl shadow-lg py-2 z-50"
                   >
-                    {item.children.map((child, i) => (
-                      <motion.div
-                        key={child.href}
-                        initial={{ opacity: 0, x: -10 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: i * 0.04 }}
-                      >
-                        <Link
-                          href={child.href}
-                          className="block px-4 py-2 text-sm text-text-light hover:text-primary-medium hover:bg-gray-50 transition-colors"
-                        >
-                          {child.label}
-                        </Link>
-                        {child.children && (
-                          <div className="pl-4">
-                            {child.children.map((sub) => (
-                              <Link
-                                key={sub.href}
-                                href={sub.href}
-                                className="block px-4 py-1.5 text-xs text-text-medium hover:text-primary-medium hover:bg-gray-50 transition-colors"
-                              >
-                                {sub.label}
-                              </Link>
-                            ))}
+                    {(() => {
+                      const hasGroups = item.children!.some((c) => c.group);
+                      if (hasGroups) {
+                        const groups: Record<string, typeof item.children> = {};
+                        item.children!.forEach((child) => {
+                          const g = child.group || "Other";
+                          if (!groups[g]) groups[g] = [];
+                          groups[g]!.push(child);
+                        });
+                        const groupNames = Object.keys(groups);
+                        let idx = 0;
+                        return groupNames.map((groupName, gi) => (
+                          <div key={groupName}>
+                            {gi > 0 && (
+                              <div className="border-t border-gray-100 my-1" />
+                            )}
+                            <div className="px-4 pt-2 pb-1 text-xs font-semibold uppercase tracking-wider text-text-medium">
+                              {groupName}
+                            </div>
+                            {groups[groupName]!.map((child) => {
+                              const i = idx++;
+                              return (
+                                <motion.div
+                                  key={child.href}
+                                  initial={{ opacity: 0, x: -10 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: i * 0.04 }}
+                                >
+                                  <Link
+                                    href={child.href}
+                                    className="block px-4 py-2 text-sm text-text-light hover:text-primary-medium hover:bg-gray-50 transition-colors"
+                                  >
+                                    {child.label}
+                                  </Link>
+                                </motion.div>
+                              );
+                            })}
                           </div>
-                        )}
-                      </motion.div>
-                    ))}
+                        ));
+                      }
+                      return item.children!.map((child, i) => (
+                        <motion.div
+                          key={child.href}
+                          initial={{ opacity: 0, x: -10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ delay: i * 0.04 }}
+                        >
+                          <Link
+                            href={child.href}
+                            className="block px-4 py-2 text-sm text-text-light hover:text-primary-medium hover:bg-gray-50 transition-colors"
+                          >
+                            {child.label}
+                          </Link>
+                        </motion.div>
+                      ));
+                    })()}
                   </motion.div>
                 )}
               </AnimatePresence>
@@ -247,16 +275,48 @@ export default function Header() {
                         transition={{ duration: 0.2 }}
                         className="pl-4 pb-2 space-y-1 overflow-hidden"
                       >
-                        {item.children.map((child) => (
-                          <Link
-                            key={child.href}
-                            href={child.href}
-                            onClick={() => setMobileOpen(false)}
-                            className="block py-2 text-sm text-text-medium hover:text-primary-medium transition-colors"
-                          >
-                            {child.label}
-                          </Link>
-                        ))}
+                        {(() => {
+                          const hasGroups = item.children!.some((c) => c.group);
+                          if (hasGroups) {
+                            const groups: Record<string, typeof item.children> = {};
+                            item.children!.forEach((child) => {
+                              const g = child.group || "Other";
+                              if (!groups[g]) groups[g] = [];
+                              groups[g]!.push(child);
+                            });
+                            const groupNames = Object.keys(groups);
+                            return groupNames.map((groupName, gi) => (
+                              <div key={groupName}>
+                                {gi > 0 && (
+                                  <div className="border-t border-gray-100 my-1" />
+                                )}
+                                <div className="pt-2 pb-1 text-xs font-semibold uppercase tracking-wider text-text-medium">
+                                  {groupName}
+                                </div>
+                                {groups[groupName]!.map((child) => (
+                                  <Link
+                                    key={child.href}
+                                    href={child.href}
+                                    onClick={() => setMobileOpen(false)}
+                                    className="block py-2 text-sm text-text-medium hover:text-primary-medium transition-colors"
+                                  >
+                                    {child.label}
+                                  </Link>
+                                ))}
+                              </div>
+                            ));
+                          }
+                          return item.children!.map((child) => (
+                            <Link
+                              key={child.href}
+                              href={child.href}
+                              onClick={() => setMobileOpen(false)}
+                              className="block py-2 text-sm text-text-medium hover:text-primary-medium transition-colors"
+                            >
+                              {child.label}
+                            </Link>
+                          ));
+                        })()}
                       </motion.div>
                     )}
                   </AnimatePresence>
