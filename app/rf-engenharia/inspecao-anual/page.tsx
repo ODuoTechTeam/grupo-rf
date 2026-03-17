@@ -11,6 +11,7 @@ import {
   IconAlertTriangle,
   IconClock,
   IconFileCheck,
+  IconCreditCard,
 } from "@tabler/icons-react";
 import { Search, Calendar } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -81,6 +82,12 @@ const importanceItems = [
     title: "Documentação Atualizada",
     description:
       "A inspeção anual mantém a documentação do edifício em dia, evitando problemas com fiscalização e garantindo a regularidade da edificação.",
+  },
+  {
+    icon: IconCreditCard,
+    title: "Pagamento Facilitado",
+    description:
+      "Pagamento facilitado em até 12x sem juros no cartão de crédito, tornando a manutenção da conformidade mais acessível.",
   },
 ];
 

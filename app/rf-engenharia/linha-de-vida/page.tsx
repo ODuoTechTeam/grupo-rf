@@ -18,6 +18,7 @@ import {
   ArrowLeftRight,
   CircleDot,
   Plane,
+  Truck,
 } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -96,6 +97,44 @@ const lineTypes = [
   },
 ];
 
+const faqItems = [
+  {
+    question: "O que é um sistema de linha de vida?",
+    answer:
+      "É um sistema de proteção contra quedas composto por cabos de aço ou trilhos fixados à estrutura da edificação, ao qual o trabalhador conecta seu dispositivo de proteção individual, permitindo deslocamento seguro em áreas elevadas.",
+  },
+  {
+    question: "Onde pode ser instalada a linha de vida?",
+    answer:
+      "Em edifícios residenciais e comerciais, galpões industriais, hospitais, aeroportos, obras de construção civil e em qualquer edificação onde haja necessidade de acesso seguro a coberturas ou áreas elevadas.",
+  },
+  {
+    question: "Qual a diferença entre linha de vida flexível e rígida?",
+    answer:
+      "A flexível utiliza cabo de aço, ideal para grandes vãos e coberturas, permitindo movimentação lateral. A rígida (monovia) utiliza trilho em alumínio ou aço, indicada para locais com alta frequência de uso e necessidade de transposição contínua.",
+  },
+  {
+    question: "Quais normas regulamentam a linha de vida?",
+    answer:
+      "Os sistemas de linha de vida devem atender às normas NR-18 (Construção Civil), NR-35 (Trabalho em Altura), NBR 16325 (Dispositivos de Ancoragem) e código de obras local.",
+  },
+  {
+    question: "É necessário fazer manutenção periódica?",
+    answer:
+      "Sim. A norma exige inspeção a cada 12 meses, incluindo avaliação visual dos componentes, teste de arrancamento nos pontos de ancoragem e revalidação do laudo técnico com emissão de nova ART.",
+  },
+  {
+    question: "A RF Engenharia fabrica os componentes?",
+    answer:
+      "Sim. Somos fabricantes e distribuidores de olhais de ancoragem, postes e demais componentes. Todo material é fabricado em aço inox 304/316 com certificação de laboratório independente e garantia de 5 anos.",
+  },
+  {
+    question: "Como funciona o pagamento?",
+    answer:
+      "Oferecemos pagamento facilitado em até 12x sem juros no cartão de crédito ou faturado mediante análise cadastral. Temos material em estoque com pronta entrega.",
+  },
+];
+
 const applications = [
   { label: "Edifícios residenciais e comerciais", icon: IconBuildingSkyscraper },
   { label: "Galpões e armazéns", icon: IconBuildingFactory2 },
@@ -103,6 +142,7 @@ const applications = [
   { label: "Canteiros de obra", icon: IconHelmet },
   { label: "Instalações industriais", icon: IconBuildingFactory2 },
   { label: "Aeroportos", icon: Plane },
+  { label: "Docas e caminhões", icon: Truck },
 ];
 
 export default function LinhaDeVidaPage() {
@@ -230,6 +270,8 @@ export default function LinhaDeVidaPage() {
                   "Impermeabilização dos pontos de fixação",
                   "Laudo técnico e ART registrada no CREA",
                   "Conformidade com NR-18 e NR-35",
+                  "Pagamento facilitado em até 12x sem juros",
+                  "Garantia de 5 anos do material",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-3">
                     <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0 mt-0.5" />
@@ -279,6 +321,37 @@ export default function LinhaDeVidaPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionTitle
+            badge="Dúvidas Frequentes"
+            title="Perguntas sobre Linha de Vida"
+            description="Respostas para as principais dúvidas sobre sistemas de linha de vida."
+            align="center"
+          />
+
+          <div className="mt-12 space-y-4">
+            {faqItems.map((faq) => (
+              <details
+                key={faq.question}
+                className="group p-6 rounded-xl bg-gray-50 border border-gray-100 hover:border-primary-medium/30 transition-colors"
+              >
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <h3 className="text-base font-semibold text-gray-900 pr-4">
+                    {faq.question}
+                  </h3>
+                  <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0 group-open:rotate-90 transition-transform" />
+                </summary>
+                <p className="mt-4 text-sm text-text-light leading-relaxed">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

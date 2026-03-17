@@ -11,6 +11,8 @@ import {
   IconNotes,
   IconStack2,
   IconBuildingFactory2,
+  IconCreditCard,
+  IconRosetteDiscountCheck,
 } from "@tabler/icons-react";
 import {
   Weight,
@@ -121,6 +123,18 @@ const differentials = [
     description:
       "Todos os projetos atendem às normas ABNT, NR-18 e NR-35, garantindo segurança e legalidade.",
   },
+  {
+    icon: IconCreditCard,
+    title: "Pagamento Facilitado",
+    description:
+      "Pagamento facilitado em até 12x sem juros no cartão de crédito, tornando o investimento acessível.",
+  },
+  {
+    icon: IconRosetteDiscountCheck,
+    title: "Garantia do Serviço",
+    description:
+      "Garantia de todo o serviço executado, assegurando a qualidade e durabilidade da estrutura metálica.",
+  },
 ];
 
 export default function ConstrucaoMetalicaPage() {
@@ -220,7 +234,7 @@ export default function ConstrucaoMetalicaPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
             {differentials.map((diff) => {
               const DiffIcon = diff.icon;
               return (

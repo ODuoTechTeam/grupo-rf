@@ -16,6 +16,7 @@ import {
   IconStack2,
   IconTestPipe,
   IconScale,
+  IconRouteAltRight,
 } from "@tabler/icons-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import SectionTitle from "@/components/ui/SectionTitle";
@@ -100,6 +101,54 @@ const features = [
   },
 ];
 
+const faqItems = [
+  {
+    question: "O sistema de ancoragem segue as exigências das normas?",
+    answer:
+      "Sim. O Sistema de Ancoragem Predial da RF Engenharia está de acordo com as exigências das normas NR-18, NR-35, NBR 16325 e NR 10/2015-CBMDF.",
+  },
+  {
+    question: "O uso da ancoragem é obrigatório?",
+    answer:
+      "Sim. Desde a publicação da Portaria Nº 157, de 10 de abril de 2006, todas as edificações com, no mínimo, quatro pavimentos (ou altura de 12m) devem possuir dispositivos destinados à ancoragem de equipamentos de sustentação de andaimes, balancins e cadeirinhas, bem como cabos de segurança para fixação do trabalhador.",
+  },
+  {
+    question: "Como deve ser o sistema de ancoragem?",
+    answer:
+      "De acordo com a legislação, o sistema deve ser fixo na estrutura do edifício e de forma que atenda todo o perímetro da fachada. Deve ser confeccionado em aço inox, resistente a intempéries, rastreável com gravação do nome e CNPJ da empresa fornecedora, material constituinte, número de lote e limite de carga.",
+  },
+  {
+    question: "Além do olhal, qual outro material é utilizado?",
+    answer:
+      "É necessário utilizar barras roscadas em aço inox, bem como olhal de ancoragem especialmente desenvolvido por nossa equipe técnica, também fabricado em aço inox, cuja resistência é superior a 2.500 kgf, além de resistência a intempéries.",
+  },
+  {
+    question: "É realizada uma avaliação prévia à instalação?",
+    answer:
+      "Sim. Antes de qualquer instalação, realizamos o desenvolvimento de projeto de locação dos pontos e verificação in loco com detector de materiais profissional não invasivo, garantindo que não haverá danos à estrutura existente.",
+  },
+  {
+    question: "Quantos pontos são necessários em cada prédio?",
+    answer:
+      "A exigência da norma é de que os pontos atendam a toda a fachada do edifício. Recomendamos elaborar projeto específico para cada edificação, pois a quantidade varia conforme a geometria, altura e necessidades operacionais.",
+  },
+  {
+    question: "Como se garante que o dispositivo está bem instalado?",
+    answer:
+      "Após a instalação, é realizado teste de arrancamento estático em 100% dos pontos, onde é aplicada carga superior a 2.500 kgf e verifica-se sua estabilidade. O resultado é documentado em laudo técnico.",
+  },
+  {
+    question: "Qual a periodicidade de manutenção?",
+    answer:
+      "A norma prevê que os sistemas de ancoragem devem sofrer inspeção periódica a cada 12 meses, no máximo. A inspeção inclui avaliação visual e teste de arrancamento em todos os pontos instalados.",
+  },
+  {
+    question: "É necessário tratamento de impermeabilização?",
+    answer:
+      "Se a instalação for na platibanda, geralmente não há riscos à impermeabilização. Porém, se for em laje, pode haver necessidade de reparo da manta. A RF Engenharia realiza o tratamento de impermeabilização quando necessário.",
+  },
+];
+
 const applications = [
   {
     icon: IconBuildingSkyscraper,
@@ -112,6 +161,18 @@ const applications = [
     title: "Cadeirinha / Rapel",
     description:
       "Ancoragens projetadas para cadeirinhas e sistemas de rapel para manutenção e limpeza de fachadas.",
+  },
+  {
+    icon: IconRouteAltRight,
+    title: "Linha de Vida",
+    description:
+      "Permite a instalação de sistema de proteção coletiva com linha de vida, atendendo às exigências da NR-35.",
+  },
+  {
+    icon: IconShieldCheck,
+    title: "Resgate pelo Corpo de Bombeiros",
+    description:
+      "Garante que, em caso de emergência, o Corpo de Bombeiros possa realizar resgate rápido e eficiente. Atende às normas de Resgate e Salvamento (NR 10/2015-CBMDF).",
   },
 ];
 
@@ -313,7 +374,7 @@ export default function AncoragemPredialPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {applications.map((app) => {
               const AppIcon = app.icon;
               return (
@@ -333,6 +394,37 @@ export default function AncoragemPredialPage() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-6">
+          <SectionTitle
+            badge="Dúvidas Frequentes"
+            title="Perguntas sobre Ancoragem Predial"
+            description="Respostas para as principais dúvidas sobre sistemas de ancoragem."
+            align="center"
+          />
+
+          <div className="mt-12 space-y-4">
+            {faqItems.map((faq) => (
+              <details
+                key={faq.question}
+                className="group p-6 rounded-xl bg-gray-50 border border-gray-100 hover:border-primary-medium/30 transition-colors"
+              >
+                <summary className="flex items-center justify-between cursor-pointer list-none">
+                  <h3 className="text-base font-semibold text-gray-900 pr-4">
+                    {faq.question}
+                  </h3>
+                  <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0 group-open:rotate-90 transition-transform" />
+                </summary>
+                <p className="mt-4 text-sm text-text-light leading-relaxed">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
           </div>
         </div>
       </section>

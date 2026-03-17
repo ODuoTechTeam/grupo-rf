@@ -8,7 +8,6 @@ import {
   IconBuildingSkyscraper,
   IconTool,
   IconBulb,
-  IconBuildingFactory2,
   IconBook,
   IconCircleCheck,
 } from "@tabler/icons-react";
@@ -69,30 +68,23 @@ const milestones = [
 const groupCompanies = [
   {
     icon: IconShieldCheck,
-    name: "RF Engenharia",
+    name: "RF Engenharia Ltda",
     description:
       "Projetos, fabricação e instalação de sistemas de segurança do trabalho em altura. Ancoragem predial, linha de vida, construção metálica, treinamentos e inspeção anual.",
     href: "/rf-engenharia",
   },
   {
     icon: IconBuildingSkyscraper,
-    name: "RF Locação",
+    name: "RF Locação e Serv. de Construção",
     description:
       "Locação de equipamentos para construção civil com montagem, manutenção, projeto, ART e treinamento. Balancins, andaimes, elevadores e proteções coletivas.",
     href: "/rf-locacao",
   },
   {
     icon: IconBulb,
-    name: "RF Soluções",
+    name: "RF Soluções de Prevenção contra Quedas",
     description:
       "Soluções integradas em engenharia para demandas especiais. Consultoria técnica, projetos customizados e suporte especializado.",
-    href: "#",
-  },
-  {
-    icon: IconBuildingFactory2,
-    name: "RF Indústria",
-    description:
-      "Fabricação de componentes e estruturas metálicas. Produção própria de pontos de ancoragem, suportes, plataformas e equipamentos sob medida.",
     href: "#",
   },
 ];
@@ -256,7 +248,7 @@ export default function SobrePage() {
           <SectionTitle
             badge="O Grupo"
             title="Empresas do Grupo RF"
-            description="Quatro empresas integradas para oferecer soluções completas em segurança do trabalho e engenharia."
+            description="Três empresas integradas para oferecer soluções completas em segurança do trabalho e engenharia."
           />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

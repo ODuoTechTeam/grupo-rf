@@ -9,6 +9,7 @@ import {
   IconFileCheck,
   IconBuildingSkyscraper,
   IconBuildingFactory2,
+  IconCreditCard,
 } from "@tabler/icons-react";
 import {
   ShieldCheck,
@@ -103,6 +104,12 @@ const differentials = [
     title: "Conformidade Normativa",
     description:
       "Projetos e laudos em total conformidade com as Normas Regulamentadoras e normas técnicas ABNT.",
+  },
+  {
+    icon: IconCreditCard,
+    title: "Pagamento Facilitado",
+    description:
+      "Pagamento facilitado em até 12x sem juros no cartão de crédito para todos os serviços técnicos.",
   },
 ];
 
@@ -215,7 +222,7 @@ export default function ProjetosLaudosPage() {
             align="center"
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {differentials.map((diff) => {
               const DiffIcon = diff.icon;
               return (

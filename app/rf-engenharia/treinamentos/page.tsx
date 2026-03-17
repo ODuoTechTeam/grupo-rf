@@ -9,6 +9,7 @@ import {
   IconBook,
   IconShieldCheck,
   IconFileCheck,
+  IconCreditCard,
 } from "@tabler/icons-react";
 import { Zap, Mountain } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -129,6 +130,12 @@ const benefits = [
     title: "Documentação Completa",
     description:
       "Lista de presença, conteúdo programático, certificados e toda a documentação necessária para fiscalização.",
+  },
+  {
+    icon: IconCreditCard,
+    title: "Pagamento Facilitado",
+    description:
+      "Pagamento facilitado em até 12x sem juros no cartão de crédito para treinamentos in company.",
   },
 ];
 

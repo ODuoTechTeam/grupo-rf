@@ -30,7 +30,7 @@ export default function Home() {
         badge="Desde 2006 protegendo vidas"
         title="Segurança Inteligente que"
         highlight="Salva Vidas"
-        description="Desde 2006, atuamos no mercado de projetos, consultoria, fabricação e instalação de sistemas de segurança do trabalho — especialmente prevenção contra queda em altura. Tornamos sua obra mais segura e valorizamos seu projeto."
+        description="Desde 2006, atuamos no mercado de projetos, consultoria, fabricação e instalação de sistemas de segurança do trabalho — especialmente prevenção contra queda em altura em edifícios e construção civil, bem como locação de máquinas e equipamentos para obras."
         primaryCTA={{ label: "Solicitar Visita Técnica", href: "/contato" }}
         secondaryCTA={{ label: "Conheça Nossos Serviços", href: "/rf-engenharia" }}
         showStats
