@@ -43,21 +43,6 @@ export default function EquipmentCard({
             className="object-cover card-image-zoom"
           />
 
-          {/* Reveal overlay on hover */}
-          <div className="card-reveal-overlay absolute inset-0 bg-primary/90 flex items-center justify-center p-4">
-            <div className="text-center">
-              {features && features.length > 0 && (
-                <ul className="space-y-1.5">
-                  {features.map((f) => (
-                    <li key={f} className="flex items-center gap-2 text-xs text-white/90">
-                      <div className="w-1 h-1 rounded-full bg-accent-warm-light shrink-0" />
-                      {f}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          </div>
         </div>
       )}
 

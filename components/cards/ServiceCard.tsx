@@ -36,26 +36,7 @@ export default function ServiceCard({
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
 
-          {/* Reveal overlay on hover */}
-          <div className="card-reveal-overlay absolute inset-0 bg-primary/90 flex items-center justify-center p-6">
-            <div className="text-center">
-              <div className="w-12 h-12 rounded-xl bg-white/20 backdrop-blur-sm flex items-center justify-center mx-auto mb-3">
-                <Icon className="w-6 h-6 text-white" />
-              </div>
-              {features && features.length > 0 && (
-                <ul className="space-y-1.5">
-                  {features.slice(0, 4).map((feature) => (
-                    <li key={feature} className="flex items-center gap-2 text-xs text-white/90">
-                      <div className="w-1 h-1 rounded-full bg-accent-warm-light shrink-0" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-          </div>
-
-          <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg bg-white/90 backdrop-blur-sm flex items-center justify-center group-hover:opacity-0 transition-opacity duration-300">
+          <div className="absolute bottom-3 left-3 w-10 h-10 rounded-lg bg-white/90 backdrop-blur-sm flex items-center justify-center">
             <Icon className="w-5 h-5 text-primary-medium" />
           </div>
         </div>
