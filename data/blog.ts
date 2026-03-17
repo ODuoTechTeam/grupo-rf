@@ -38,7 +38,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: 8,
     author: "Eng. Rafael Vaz Ferreira",
     coverImage:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+      "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
     coverImageAlt:
       "Trabalhadores utilizando equipamentos de segurança em altura em uma construção",
     featured: true,
@@ -132,9 +132,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2025-10-28",
     readingTime: 6,
     author: "Eng. Rafael Vaz Ferreira",
-    coverImage:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80",
-    coverImageAlt: "Vista de edifícios residenciais modernos com fachada de vidro",
+    coverImage: "/images/ancoragem/ancoragem-02.jpg",
+    coverImageAlt: "Pontos de ancoragem predial instalados em cobertura de edifício",
     tags: ["Portaria 157", "Ancoragem Predial", "Legislação", "Segurança Predial"],
     content: [
       {
@@ -208,9 +207,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2025-10-15",
     readingTime: 5,
     author: "Equipe Técnica RF",
-    coverImage:
-      "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&q=80",
-    coverImageAlt: "Andaimes instalados na fachada de um edifício em construção",
+    coverImage: "/images/balancim/balancim-02.jpg",
+    coverImageAlt: "Balancim elétrico suspenso em fachada de edifício",
     tags: ["Balancim Elétrico", "Andaime Fachadeiro", "Locação de Equipamentos", "Fachada"],
     content: [
       {
@@ -278,10 +276,9 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2025-09-30",
     readingTime: 7,
     author: "Eng. Rafael Vaz Ferreira",
-    coverImage:
-      "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=80",
+    coverImage: "/images/linha-de-vida/linha-vida-02.jpg",
     coverImageAlt:
-      "Instalação de sistema de segurança em cobertura industrial",
+      "Sistema de linha de vida instalado em cobertura industrial",
     featured: true,
     tags: ["Linha de Vida", "Segurança em Altura", "NBR 16325", "EPI"],
     content: [
@@ -360,7 +357,7 @@ export const blogPosts: BlogPost[] = [
     readingTime: 6,
     author: "Equipe Técnica RF",
     coverImage:
-      "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1200&q=80",
+      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
     coverImageAlt: "Profissionais em treinamento de segurança do trabalho",
     tags: ["NR-35", "Treinamento", "Capacitação", "Segurança do Trabalho"],
     content: [
@@ -434,9 +431,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2025-09-05",
     readingTime: 5,
     author: "Eng. Rafael Vaz Ferreira",
-    coverImage:
-      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80",
-    coverImageAlt: "Profissional analisando documentos técnicos de engenharia",
+    coverImage: "/images/ancoragem/ancoragem-06.jpg",
+    coverImageAlt: "Sistema de ancoragem predial com laudo técnico e ART",
     tags: ["ART", "Laudo Técnico", "CREA", "Documentação Técnica"],
     content: [
       {
@@ -500,9 +496,8 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2025-08-20",
     readingTime: 7,
     author: "Eng. Rafael Vaz Ferreira",
-    coverImage:
-      "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80",
-    coverImageAlt: "Edifício institucional moderno com fachada de vidro",
+    coverImage: "/images/linha-de-vida/linha-vida-05.jpg",
+    coverImageAlt: "Instalação de linha de vida em edifício institucional",
     featured: true,
     tags: ["Case", "TCU", "Linha de Vida", "Ancoragem Predial", "Brasília"],
     content: [
@@ -570,8 +565,7 @@ export const blogPosts: BlogPost[] = [
     publishedAt: "2025-08-05",
     readingTime: 6,
     author: "Equipe Técnica RF",
-    coverImage:
-      "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80",
+    coverImage: "/images/ancoragem/ancoragem-03.jpg",
     coverImageAlt: "Profissional realizando inspeção de segurança em cobertura de edifício",
     tags: ["Inspeção Anual", "Ancoragem", "Manutenção Preventiva", "NR-35"],
     content: [
