@@ -10,7 +10,7 @@ import {
   IconNotes,
   IconBuildingSkyscraper,
   IconBuildingFactory2,
-  IconHelmet,
+  IconHammer,
   IconStack2,
 } from "@tabler/icons-react";
 import {
@@ -139,7 +139,7 @@ const applications = [
   { label: "Edifícios residenciais e comerciais", icon: IconBuildingSkyscraper },
   { label: "Galpões e armazéns", icon: IconBuildingFactory2 },
   { label: "Hospitais e centros de saúde", icon: Hospital },
-  { label: "Canteiros de obra", icon: IconHelmet },
+  { label: "Canteiros de obra", icon: IconHammer },
   { label: "Instalações industriais", icon: IconBuildingFactory2 },
   { label: "Aeroportos", icon: Plane },
   { label: "Docas e caminhões", icon: Truck },

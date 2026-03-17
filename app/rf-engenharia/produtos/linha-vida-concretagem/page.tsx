@@ -6,7 +6,7 @@ import {
   IconShieldCheck,
   IconAward,
   IconTool,
-  IconHelmet,
+  IconBuildingSkyscraper,
   IconUsersGroup,
   IconClipboardCheck,
   IconPackage,
@@ -34,7 +34,7 @@ const features = [
       "Sistema de proteção coletiva contra quedas durante as etapas de formas, armação e concretagem de lajes e estruturas.",
   },
   {
-    icon: IconHelmet,
+    icon: IconBuildingSkyscraper,
     title: "Específico para Obras",
     description:
       "Projetado especificamente para o ambiente de construção civil, suportando as condições adversas do canteiro de obras.",

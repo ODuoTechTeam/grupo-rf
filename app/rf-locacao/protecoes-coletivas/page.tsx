@@ -5,7 +5,7 @@ import {
   IconStack2,
   IconLineDashed,
   IconBuildingSkyscraper,
-  IconHelmet,
+  IconHammer,
   IconUsersGroup,
   IconAlertTriangle,
   IconCircleCheck,
@@ -62,7 +62,7 @@ const protectionTypes = [
 
 const applications = [
   { icon: IconBuildingSkyscraper, label: "Edificações" },
-  { icon: IconHelmet, label: "Construção civil" },
+  { icon: IconHammer, label: "Construção civil" },
   { icon: IconUsersGroup, label: "Áreas de circulação" },
   { icon: IconAlertTriangle, label: "Perímetros elevados" },
   { icon: IconPackage, label: "Concretagem" },

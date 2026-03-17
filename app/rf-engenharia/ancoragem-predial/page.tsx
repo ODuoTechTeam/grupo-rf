@@ -11,7 +11,7 @@ import {
   IconFlask,
   IconNotes,
   IconBuildingSkyscraper,
-  IconHelmet,
+  IconArmchair,
   IconRosetteDiscountCheck,
   IconStack2,
   IconTestPipe,
@@ -157,7 +157,7 @@ const applications = [
       "Pontos de ancoragem dimensionados para suportar a carga de balancins suspensos utilizados em serviços de fachada.",
   },
   {
-    icon: IconHelmet,
+    icon: IconArmchair,
     title: "Cadeirinha / Rapel",
     description:
       "Ancoragens projetadas para cadeirinhas e sistemas de rapel para manutenção e limpeza de fachadas.",
