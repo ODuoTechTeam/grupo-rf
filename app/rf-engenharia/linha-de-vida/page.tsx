@@ -12,6 +12,7 @@ import {
   IconBuildingFactory2,
   IconHammer,
   IconStack2,
+  IconChevronDown,
 } from "@tabler/icons-react";
 import {
   Hospital,
@@ -345,7 +346,7 @@ export default function LinhaDeVidaPage() {
                   <h3 className="text-base font-semibold text-gray-900 pr-4">
                     {faq.question}
                   </h3>
-                  <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0 group-open:rotate-90 transition-transform" />
+                  <IconChevronDown className="w-5 h-5 text-primary-medium shrink-0 group-open:rotate-180 transition-transform" />
                 </summary>
                 <p className="mt-4 text-sm text-text-light leading-relaxed">
                   {faq.answer}
