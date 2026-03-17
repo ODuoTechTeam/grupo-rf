@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import {
   IconSchool,
-  IconHelmet,
+  IconBuildingSkyscraper,
   IconCircleCheck,
   IconUsersGroup,
   IconClock,
@@ -10,8 +10,9 @@ import {
   IconShieldCheck,
   IconFileCheck,
   IconCreditCard,
+  IconArrowBadgeUp,
 } from "@tabler/icons-react";
-import { Zap, Mountain } from "lucide-react";
+import { Zap } from "lucide-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import SectionTitle from "@/components/ui/SectionTitle";
 import CTASection from "@/components/sections/CTASection";
@@ -47,7 +48,7 @@ const courses = [
     bgAccent: "bg-yellow-500/10",
   },
   {
-    icon: IconHelmet,
+    icon: IconBuildingSkyscraper,
     title: "NR-18",
     subtitle: "Condições de Segurança e Saúde no Trabalho na Construção Civil",
     description:
@@ -70,7 +71,7 @@ const courses = [
     bgAccent: "bg-blue-500/10",
   },
   {
-    icon: Mountain,
+    icon: IconArrowBadgeUp,
     title: "NR-35",
     subtitle: "Trabalho em Altura",
     description:
@@ -181,11 +182,11 @@ export default function TreinamentosPage() {
                 NR-10
               </span>
               <span className="px-4 py-2 rounded-lg bg-blue-500/10 border border-blue-500/20 text-sm text-blue-600 font-medium">
-                <IconHelmet className="w-4 h-4 inline mr-2" />
+                <IconBuildingSkyscraper className="w-4 h-4 inline mr-2" />
                 NR-18
               </span>
               <span className="px-4 py-2 rounded-lg bg-primary/10 border border-primary-medium/20 text-sm text-primary-medium font-medium">
-                <Mountain className="w-4 h-4 inline mr-2" />
+                <IconArrowBadgeUp className="w-4 h-4 inline mr-2" />
                 NR-35
               </span>
             </div>

@@ -35,12 +35,12 @@ export default function EquipmentCard({
       )}
 
       {image && (
-        <div className="relative h-36 md:h-44 overflow-hidden bg-bg-surface flex items-center justify-center">
+        <div className="relative h-44 md:h-52 overflow-hidden bg-bg-surface">
           <Image
             src={image}
             alt={title}
             fill
-            className="object-contain p-4 card-image-zoom"
+            className="object-cover card-image-zoom"
           />
 
           {/* Reveal overlay on hover */}

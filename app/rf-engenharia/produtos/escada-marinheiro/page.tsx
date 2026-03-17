@@ -116,8 +116,8 @@ export default function EscadaMarinheiroPage() {
       {/* Hero Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col lg:flex-row gap-12 items-start">
-            <div className="flex-1">
+          <div className="flex flex-col lg:flex-row gap-12 items-center">
+            <div className="w-full lg:w-[60%]">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider uppercase rounded-full bg-primary-pale text-primary-medium border border-primary-medium/30">
                 <IconTool className="w-4 h-4" />
                 Produto
@@ -140,15 +140,15 @@ export default function EscadaMarinheiroPage() {
                 </Button>
               </div>
             </div>
-            <div className="shrink-0 w-full lg:w-96">
+            <div className="w-full lg:w-[40%]">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
                 <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden">
                   <Image
                     src="/images/estruturas-metalicas/estrutura-metalica-01.jpg"
                     alt="Escada Marinheiro"
-                    width={500}
-                    height={400}
+                    width={600}
+                    height={500}
                     className="w-full h-auto object-cover"
                   />
                 </div>

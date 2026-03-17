@@ -91,7 +91,7 @@ export const locacaoEquipments: Equipment[] = [
       "Guarda-corpo metálico, suportes de bandejas e tubo linha de vida para proteção coletiva em obras.",
     icon: IconShieldCheck,
     href: "/rf-locacao/protecoes-coletivas",
-    image: "https://images.unsplash.com/photo-1590644365607-1c5e1a1ae85b?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
     features: [
       "Guarda-corpo metálico",
       "Suportes de bandejas",
