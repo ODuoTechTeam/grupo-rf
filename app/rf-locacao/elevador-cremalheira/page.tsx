@@ -5,7 +5,6 @@ import {
   IconPackage,
   IconBuildingFactory2,
   IconBuildingSkyscraper,
-  IconHelmet,
   IconUsersGroup,
   IconTruck,
   IconShieldCheck,
@@ -51,7 +50,7 @@ const features = [
 const applications = [
   { icon: IconBuildingSkyscraper, label: "Edifícios residenciais" },
   { icon: IconBuildingFactory2, label: "Obras industriais" },
-  { icon: IconHelmet, label: "Infraestrutura" },
+  { icon: IconBuildingFactory2, label: "Infraestrutura" },
   { icon: IconPackage, label: "Transporte de materiais" },
   { icon: IconUsersGroup, label: "Transporte de pessoal" },
   { icon: IconTruck, label: "Logística de canteiro" },

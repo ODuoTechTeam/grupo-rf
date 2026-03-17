@@ -6,7 +6,7 @@ import {
   IconShieldCheck,
   IconTool,
   IconBuildingSkyscraper,
-  IconHelmet,
+  IconZoomCheck,
   IconCircleCheck,
 } from "@tabler/icons-react";
 import Breadcrumb from "@/components/ui/Breadcrumb";
@@ -51,7 +51,7 @@ const applications = [
   { icon: Paintbrush, label: "Pintura externa" },
   { icon: Droplets, label: "Impermeabilização" },
   { icon: IconTool, label: "Reparos pontuais" },
-  { icon: IconHelmet, label: "Inspeções técnicas" },
+  { icon: IconZoomCheck, label: "Inspeções técnicas" },
   { icon: IconShieldCheck, label: "Serviços de manutenção" },
 ];
 

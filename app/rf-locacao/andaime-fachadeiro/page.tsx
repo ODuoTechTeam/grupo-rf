@@ -5,7 +5,7 @@ import {
   IconStack2,
   IconBuildingSkyscraper,
   IconBuildingFactory2,
-  IconHelmet,
+  IconWall,
   IconHammer,
   IconShieldCheck,
   IconCircleCheck,
@@ -53,7 +53,7 @@ const applications = [
   { icon: IconHammer, label: "Reformas" },
   { icon: PaintBucket, label: "Pintura" },
   { icon: IconStack2, label: "Acabamentos" },
-  { icon: IconHelmet, label: "Alvenaria" },
+  { icon: IconWall, label: "Alvenaria" },
 ];
 
 export default function AndaimeFachadeiroPage() {

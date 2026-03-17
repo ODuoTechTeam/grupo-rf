@@ -13,7 +13,6 @@ import {
   IconSettings,
   IconPackage,
   IconBuildingSkyscraper,
-  IconHelmet,
   IconBuildingFactory2,
   IconTruck,
   IconShieldCheck,
@@ -74,7 +73,7 @@ const electricalEquipment = [
 const applications = [
   { icon: IconBuildingSkyscraper, label: "Construção civil" },
   { icon: IconBuildingFactory2, label: "Obras industriais" },
-  { icon: IconHelmet, label: "Reformas" },
+  { icon: IconTool, label: "Reformas" },
   { icon: IconHammer, label: "Demolições" },
   { icon: IconPackage, label: "Acabamentos" },
   { icon: IconTruck, label: "Infraestrutura" },

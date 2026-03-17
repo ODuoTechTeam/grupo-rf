@@ -5,7 +5,7 @@ import {
   IconElevator,
   IconBuildingSkyscraper,
   IconBuildingFactory2,
-  IconHelmet,
+  IconHammer,
   IconPackage,
   IconTruck,
   IconShieldCheck,
@@ -76,7 +76,7 @@ const applications = [
   { icon: IconElevator, label: "Içamento de materiais" },
   { icon: IconBuildingSkyscraper, label: "Edificações" },
   { icon: IconBuildingFactory2, label: "Obras industriais" },
-  { icon: IconHelmet, label: "Construção civil" },
+  { icon: IconHammer, label: "Construção civil" },
   { icon: IconPackage, label: "Carga e descarga" },
   { icon: IconTruck, label: "Logística de obra" },
 ];
