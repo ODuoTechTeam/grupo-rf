@@ -146,22 +146,22 @@ export default function LinhaVidaEscadasMarinheiroPage() {
       </section>
 
       {/* Kit Contents / Specs */}
-      <section className="py-12 bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="flex items-center gap-3">
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm">
+            <div className="flex items-center gap-3 mb-6">
               <div className="w-12 h-12 rounded-xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center">
                 <IconPackage className="w-6 h-6 text-primary-medium" />
               </div>
-              <h3 className="text-lg font-bold font-[family-name:var(--font-display)] text-gray-900">
+              <h3 className="text-xl font-bold font-[family-name:var(--font-display)] text-gray-900">
                 O que inclui
               </h3>
             </div>
-            <div className="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {components.map((item) => (
-                <div key={item} className="flex items-start gap-2">
-                  <IconCircleCheck className="w-4 h-4 text-primary-medium shrink-0 mt-0.5" />
-                  <span className="text-sm text-text-light">{item}</span>
+                <div key={item} className="flex items-center gap-3 p-3 rounded-lg bg-gray-50 border border-gray-100">
+                  <IconCircleCheck className="w-5 h-5 text-primary-medium shrink-0" />
+                  <span className="text-sm text-text-primary font-medium">{item}</span>
                 </div>
               ))}
             </div>
