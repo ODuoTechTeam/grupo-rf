@@ -46,7 +46,7 @@ export const locacaoEquipments: Equipment[] = [
       "Trabalho contínuo em altura para manutenção industrial e predial, reformas, acabamentos, alvenaria e pintura.",
     icon: IconBuildingSkyscraper,
     href: "/rf-locacao/andaime-fachadeiro",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "/images/equipment/andaime-fachadeiro.jpg",
     features: [
       "Trabalho contínuo",
       "Reformas e acabamentos",
@@ -61,7 +61,7 @@ export const locacaoEquipments: Equipment[] = [
       "Transporte de materiais e trabalhadores na obra. Ideal para obras industriais, infraestrutura e civis.",
     icon: IconElevator,
     href: "/rf-locacao/elevador-cremalheira",
-    image: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+    image: "/images/equipment/elevador-cremalheira.jpg",
     features: [
       "Transporte vertical",
       "Materiais e pessoas",
@@ -76,7 +76,7 @@ export const locacaoEquipments: Equipment[] = [
       "Movimentação de cargas no canteiro de obras. Fácil manuseio, reduz a carga de trabalho manual.",
     icon: IconForklift,
     href: "/rf-locacao/mini-grua",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    image: "/images/equipment/mini-grua.jpg",
     features: [
       "Fácil manuseio",
       "Movimentação de cargas",
@@ -91,7 +91,7 @@ export const locacaoEquipments: Equipment[] = [
       "Guarda-corpo metálico, suportes de bandejas e tubo linha de vida para proteção coletiva em obras.",
     icon: IconShieldCheck,
     href: "/rf-locacao/protecoes-coletivas",
-    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+    image: "/images/equipment/protecoes-coletivas.jpg",
     features: [
       "Guarda-corpo metálico",
       "Suportes de bandejas",
@@ -106,7 +106,7 @@ export const locacaoEquipments: Equipment[] = [
       "Balancim individual com cadeira suspensa manual. Estrutura metálica resistente e assento ergonômico.",
     icon: IconArmchair,
     href: "/rf-locacao/cadeirinha-cabo-aco",
-    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80",
+    image: "/images/equipment/cadeirinha.jpg",
     features: [
       "Cadeira suspensa manual",
       "Estrutura metálica",
@@ -121,7 +121,7 @@ export const locacaoEquipments: Equipment[] = [
       "Betoneira, compactador de solo, marteletes, furadeiras, serras, compressores e mais para sua obra.",
     icon: IconTools,
     href: "/rf-locacao/equipamentos-diversos",
-    image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=800&q=80",
+    image: "/images/equipment/equipamentos-diversos.jpg",
     features: [
       "Betoneira",
       "Compactador de solo",
@@ -136,7 +136,7 @@ export const locacaoEquipments: Equipment[] = [
       "Mini-grua, velox, guincho de coluna e talha para movimentação vertical de cargas na obra.",
     icon: IconArrowBadgeUp,
     href: "/rf-locacao/icamento",
-    image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&q=80",
+    image: "/images/equipment/mini-grua.jpg",
     features: [
       "Mini-Grua",
       "Velox",
