@@ -34,8 +34,8 @@ export default function Home() {
         primaryCTA={{ label: "Solicitar Visita Técnica", href: "/contato" }}
         secondaryCTA={{ label: "Conheça Nossos Serviços", href: "/rf-engenharia" }}
         showStats
-        image="/images/ancoragem/ancoragem-01.jpg"
-        imageAlt="Sistema de ancoragem predial RF Engenharia"
+        image="/images/hero/hero-home-3.jpg"
+        imageAlt="Construção civil e segurança do trabalho em altura"
       />
 
       {/* Benefícios — Bento Grid */}
