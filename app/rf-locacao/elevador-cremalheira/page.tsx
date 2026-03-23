@@ -10,6 +10,7 @@ import {
   IconShieldCheck,
   IconCircleCheck,
 } from "@tabler/icons-react";
+import Image from "next/image";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import SectionTitle from "@/components/ui/SectionTitle";
 import CTASection from "@/components/sections/CTASection";
@@ -69,8 +70,8 @@ export default function ElevadorCremalheiraPage() {
             ]}
           />
 
-          <div className="mt-8 flex flex-col lg:flex-row gap-12 items-start">
-            <div className="flex-1">
+          <div className="mt-8 flex flex-col lg:flex-row gap-12 items-center">
+            <div className="w-full lg:w-[60%]">
               <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary-pale border border-primary-medium/30 mb-6">
                 <IconElevator className="w-8 h-8 text-primary-medium" />
               </div>
@@ -88,6 +89,20 @@ export default function ElevadorCremalheiraPage() {
                 precisão, o equipamento otimiza a logística da obra e aumenta significativamente
                 a produtividade.
               </p>
+            </div>
+            <div className="w-full lg:w-[40%]">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
+                <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
+                <div className="relative rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/balancim/balancim-04.jpg"
+                    alt="Elevador Cremalheira"
+                    width={600}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -19,6 +19,7 @@ import {
   IconRouteAltRight,
   IconChevronDown,
 } from "@tabler/icons-react";
+import Image from "next/image";
 import Breadcrumb from "@/components/ui/Breadcrumb";
 import SectionTitle from "@/components/ui/SectionTitle";
 import CTASection from "@/components/sections/CTASection";
@@ -191,8 +192,8 @@ export default function AncoragemPredialPage() {
             ]}
           />
 
-          <div className="mt-8 flex flex-col lg:flex-row gap-12 items-start">
-            <div className="flex-1">
+          <div className="mt-8 flex flex-col lg:flex-row gap-12 items-center">
+            <div className="w-full lg:w-[60%]">
               <div className="inline-flex items-center gap-3 mb-6">
                 <div className="w-14 h-14 rounded-2xl bg-primary-pale border border-primary-medium/30 flex items-center justify-center">
                   <IconShieldLock className="w-7 h-7 text-primary-medium" />
@@ -231,24 +232,44 @@ export default function AncoragemPredialPage() {
               </div>
             </div>
 
-            <div className="lg:w-96 w-full p-6 rounded-2xl bg-white border border-gray-200">
-              <h3 className="text-lg font-semibold font-[family-name:var(--font-display)] text-gray-900 mb-4">
-                Obrigatoriedade Legal
-              </h3>
-              <p className="text-text-light text-sm leading-relaxed mb-4">
-                A <strong className="text-gray-900">Portaria 157/2006</strong>{" "}
-                do Ministério do Trabalho e Emprego determina que toda
-                edificação com <strong className="text-gray-900">4 ou mais pavimentos</strong>{" "}
-                (altura igual ou superior a 12 metros) deve possuir sistema de
-                ancoragem instalado na cobertura para fixação de equipamentos
-                de sustentação de andaimes e cadeirinhas.
-              </p>
-              <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary-medium/20">
-                <IconScale className="w-5 h-5 text-primary-medium shrink-0" />
-                <span className="text-sm text-primary-medium font-medium">
-                  Edifícios com 4+ pavimentos (12m)
-                </span>
+            <div className="w-full lg:w-[40%]">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
+                <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
+                <div className="relative rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/ancoragem/ancoragem-01.jpg"
+                    alt="Ancoragem Predial"
+                    width={600}
+                    height={500}
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Obrigatoriedade Legal */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-6">
+          <div className="p-8 rounded-2xl bg-white border border-gray-100 shadow-sm">
+            <h3 className="text-lg font-semibold font-[family-name:var(--font-display)] text-gray-900 mb-4">
+              Obrigatoriedade Legal
+            </h3>
+            <p className="text-text-light text-sm leading-relaxed mb-4">
+              A <strong className="text-gray-900">Portaria 157/2006</strong>{" "}
+              do Ministério do Trabalho e Emprego determina que toda
+              edificação com <strong className="text-gray-900">4 ou mais pavimentos</strong>{" "}
+              (altura igual ou superior a 12 metros) deve possuir sistema de
+              ancoragem instalado na cobertura para fixação de equipamentos
+              de sustentação de andaimes e cadeirinhas.
+            </p>
+            <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/10 border border-primary-medium/20">
+              <IconScale className="w-5 h-5 text-primary-medium shrink-0" />
+              <span className="text-sm text-primary-medium font-medium">
+                Edifícios com 4+ pavimentos (12m)
+              </span>
             </div>
           </div>
         </div>
