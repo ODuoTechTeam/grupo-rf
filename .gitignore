@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# claude code / playwright mcp session artifacts
+.claude/
+.playwright-mcp/
+
+# git worktrees
+.worktrees/
