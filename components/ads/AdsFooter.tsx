@@ -3,11 +3,11 @@ import { contact, offices, companyInfo } from "@/data/contact";
 
 export default function AdsFooter() {
   return (
-    <footer className="bg-bg-darkest text-gray-400 text-sm">
+    <footer className="bg-footer-bg text-gray-400 text-sm">
       <div className="max-w-7xl mx-auto px-6 py-10 space-y-6">
         <div className="space-y-1">
           <p className="text-gray-200 font-semibold">
-            {companyInfo.name} · CNPJ XX.XXX.XXX/0001-XX
+            {companyInfo.name} · CNPJ {companyInfo.cnpj}
           </p>
           <p>
             CREA-DF {companyInfo.creaEngenharia} · CREA-DF {companyInfo.creaLocacao} ·{" "}

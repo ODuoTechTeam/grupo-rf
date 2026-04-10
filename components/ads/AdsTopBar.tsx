@@ -15,6 +15,7 @@ export default function AdsTopBar({ whatsappMessage, lpSlug }: AdsTopBarProps) {
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
+        {/* Logo intentionally not wrapped in a link — ads LPs minimize exit points. */}
         <div className="flex items-center gap-3 shrink-0">
           <Image
             src="/images/logo/logo-rf-engenharia.jpg"
@@ -32,7 +33,7 @@ export default function AdsTopBar({ whatsappMessage, lpSlug }: AdsTopBarProps) {
             rel="noopener noreferrer"
             data-ads-cta="whatsapp"
             data-ads-lp={lpSlug}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1fb855] transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-whatsapp text-white font-semibold text-sm hover:bg-whatsapp-dark transition-colors"
           >
             <IconBrandWhatsapp className="w-5 h-5" />
             <span className="hidden sm:inline">WhatsApp</span>

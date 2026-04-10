@@ -50,6 +50,9 @@ export const contact = {
 export const companyInfo = {
   name: "Grupo RF Engenharia",
   since: 2006,
+  // TODO(pre-go-live): replace CNPJ placeholder with the real value
+  // before publishing any ads landing page to production.
+  cnpj: "XX.XXX.XXX/0001-XX",
   creaEngenharia: "10047/RF",
   creaLocacao: "11649/RF",
   responsavelTecnico: {

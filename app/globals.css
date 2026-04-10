@@ -32,6 +32,10 @@
   /* Footer — Dark for contrast */
   --color-footer-bg: #0C1222;
   --color-footer-surface: #1A2540;
+
+  /* WhatsApp brand — for ads landing page CTAs */
+  --color-whatsapp: #25D366;
+  --color-whatsapp-dark: #1FB855;
 }
 
 @theme inline {
@@ -55,6 +59,8 @@
   --color-text-dark: var(--color-text-dark);
   --color-footer-bg: var(--color-footer-bg);
   --color-footer-surface: var(--color-footer-surface);
+  --color-whatsapp: var(--color-whatsapp);
+  --color-whatsapp-dark: var(--color-whatsapp-dark);
   --font-sans: var(--font-inter);
   --font-display: var(--font-dm-sans);
 }

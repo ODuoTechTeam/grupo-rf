@@ -696,7 +696,7 @@ export default function AdsTopBar({ whatsappMessage, lpSlug }: AdsTopBarProps) {
             rel="noopener noreferrer"
             data-ads-cta="whatsapp"
             data-ads-lp={lpSlug}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#25D366] text-white font-semibold text-sm hover:bg-[#1fb855] transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-whatsapp text-white font-semibold text-sm hover:bg-whatsapp-dark transition-colors"
           >
             <IconBrandWhatsapp className="w-5 h-5" />
             <span className="hidden sm:inline">WhatsApp</span>
@@ -967,7 +967,7 @@ export default function AdsHero({
                 rel="noopener noreferrer"
                 data-ads-cta="whatsapp"
                 data-ads-lp={lpSlug}
-                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-[#25D366] text-white font-bold text-lg hover:bg-[#1fb855] transition-colors shadow-lg"
+                className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-whatsapp text-white font-bold text-lg hover:bg-whatsapp-dark transition-colors shadow-lg"
               >
                 <IconBrandWhatsapp className="w-6 h-6" />
                 Falar no WhatsApp
@@ -1361,7 +1361,7 @@ export default function AdsFinalCta({
             rel="noopener noreferrer"
             data-ads-cta="whatsapp"
             data-ads-lp={lpSlug}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white font-bold rounded-lg hover:bg-[#1fb855] transition-colors text-lg shadow-lg"
+            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-whatsapp text-white font-bold rounded-lg hover:bg-whatsapp-dark transition-colors text-lg shadow-lg"
           >
             <IconBrandWhatsapp className="w-6 h-6" />
             Falar no WhatsApp
@@ -1434,7 +1434,7 @@ export default function AdsStickyMobileCta({
         rel="noopener noreferrer"
         data-ads-cta="whatsapp"
         data-ads-lp={lpSlug}
-        className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-[#25D366] text-white font-bold text-base"
+        className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-whatsapp text-white font-bold text-base"
       >
         <IconBrandWhatsapp className="w-6 h-6" />
         Falar no WhatsApp
