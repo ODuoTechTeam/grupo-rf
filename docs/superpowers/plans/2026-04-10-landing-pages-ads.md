@@ -1244,14 +1244,14 @@ export default function AdsSocialProof() {
           {CLIENTS.map((client) => (
             <div
               key={client.src}
-              className="flex items-center justify-center h-20 p-3 bg-white rounded-xl border border-gray-200"
+              className="group flex items-center justify-center h-20 p-3 bg-white rounded-xl border border-gray-200"
             >
               <Image
                 src={client.src}
                 alt={client.alt}
                 width={120}
                 height={60}
-                className="max-h-12 w-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
+                className="max-h-12 w-auto object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
               />
             </div>
           ))}
@@ -1429,7 +1429,7 @@ export default function AdsStickyMobileCta({
   const whatsappHref = buildWhatsAppHref(whatsappMessage);
 
   return (
-    <div className="md:hidden fixed bottom-0 inset-x-0 z-40 p-3 bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+    <div className="md:hidden fixed bottom-0 inset-x-0 z-40 px-3 pt-3 pb-[calc(0.75rem+env(safe-area-inset-bottom))] bg-white border-t border-gray-200 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
       <a
         href={whatsappHref}
         target="_blank"

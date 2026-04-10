@@ -34,14 +34,14 @@ export default function AdsSocialProof() {
           {CLIENTS.map((client) => (
             <div
               key={client.src}
-              className="flex items-center justify-center h-20 p-3 bg-white rounded-xl border border-gray-200"
+              className="group flex items-center justify-center h-20 p-3 bg-white rounded-xl border border-gray-200"
             >
               <Image
                 src={client.src}
                 alt={client.alt}
                 width={120}
                 height={60}
-                className="max-h-12 w-auto object-contain grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all"
+                className="max-h-12 w-auto object-contain grayscale opacity-80 group-hover:grayscale-0 group-hover:opacity-100 transition-all"
               />
             </div>
           ))}
