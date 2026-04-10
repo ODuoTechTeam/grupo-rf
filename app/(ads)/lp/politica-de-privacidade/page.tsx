@@ -1,3 +1,7 @@
+// TODO(pre-go-live): este texto é boilerplate LGPD e PRECISA ser revisado
+// por um advogado especializado em proteção de dados antes de qualquer LP
+// ir ao ar. O conteúdo atual cumpre a estrutura mínima exigida pelo Google
+// Ads, mas não substitui uma política jurídica real.
 import type { Metadata } from "next";
 import { companyInfo, contact } from "@/data/contact";
 

@@ -53,6 +53,8 @@ O atributo `data-ads-lp` distingue as três LPs nos relatórios:
 
 Use isso no GTM para reportar conversões separadamente e no Google Ads para otimizar por LP.
 
+> **Atenção — topbar reporta `data-ads-lp="generic"`.** O `AdsTopBar` e o 0800 no topo são renderizados pelo `app/(ads)/layout.tsx`, que não tem acesso às props da página filha, então todos os cliques nesses CTAs chegam ao GTM como `data-ads-lp="generic"`. Os CTAs do hero, do CTA final e do sticky mobile continuam reportando o slug real de cada LP (`balancim-eletrico`, `ancoragem`, `linha-de-vida`). Para contabilizar cliques do topbar por LP no GTM, leia `window.location.pathname` quando `data-ads-lp === "generic"` ou trate o topbar como uma fonte separada de conversão.
+
 ## O que NÃO fazer
 
 - ❌ **Não** adicionar handlers `onClick` inline nos componentes `Ads*` — isso força esses componentes a virarem client components sem necessidade, o que aumenta o bundle. Todos os tracking de click devem ficar no GTM listener.
