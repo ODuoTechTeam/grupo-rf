@@ -139,13 +139,12 @@ export default function SobrePage() {
             <div className="lg:flex-1 mt-8 lg:mt-0">
               <div className="relative">
                 <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/15 via-primary-pale to-transparent rounded-2xl blur-sm" />
-                <div className="relative rounded-2xl overflow-hidden shadow-xl">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
                   <Image
-                    src="/images/linha-de-vida/linha-vida-03.jpg"
-                    alt="Instalação de linha de vida em galpão"
-                    width={600}
-                    height={450}
-                    className="w-full h-auto object-cover"
+                    src="/images/hero/engenheiro-por-do-sol.jpg"
+                    alt="Engenheiro observando canteiro de obras ao pôr do sol"
+                    fill
+                    className="object-cover object-center"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
                 </div>

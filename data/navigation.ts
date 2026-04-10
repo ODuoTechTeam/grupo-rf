@@ -24,6 +24,7 @@ export const navigation: NavItem[] = [
       { label: "Escada Marinheiro", href: "/rf-engenharia/produtos/escada-marinheiro", group: "Produtos" },
       { label: "Gaiola para Grua", href: "/rf-engenharia/produtos/gaiola-grua", group: "Produtos" },
       { label: "Plataforma de Grua", href: "/rf-engenharia/produtos/plataforma-grua", group: "Produtos" },
+      { label: "Material para Ancoragem", href: "/rf-engenharia/produtos/material-ancoragem", group: "Produtos" },
     ],
   },
   {

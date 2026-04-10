@@ -40,7 +40,7 @@ const divisions = [
       "Proteções Coletivas",
     ],
     href: "/rf-locacao",
-    image: "/images/balancim/balancim-01.jpg",
+    image: "/images/balancim/balancim-08.jpg",
     accent: "from-accent-warm/80 to-accent-warm-light/90",
     hoverAccent: "group-hover:from-accent-warm/90 group-hover:to-accent-warm-light",
   },

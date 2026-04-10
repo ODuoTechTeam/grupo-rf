@@ -31,7 +31,7 @@ export const locacaoEquipments: Equipment[] = [
     icon: IconCrane,
     href: "/rf-locacao/balancim-eletrico",
     badge: "Mais Procurado",
-    image: "/images/balancim/balancim-01.jpg",
+    image: "/images/balancim/balancim-08.jpg",
     features: [
       "Comandos motorizados",
       "Plataforma estável",
@@ -46,7 +46,7 @@ export const locacaoEquipments: Equipment[] = [
       "Trabalho contínuo em altura para manutenção industrial e predial, reformas, acabamentos, alvenaria e pintura.",
     icon: IconBuildingSkyscraper,
     href: "/rf-locacao/andaime-fachadeiro",
-    image: "/images/equipment/andaime-fachadeiro.jpg",
+    image: "/images/equipment/andaime-fachadeiro-2.jpg",
     features: [
       "Trabalho contínuo",
       "Reformas e acabamentos",
@@ -61,7 +61,7 @@ export const locacaoEquipments: Equipment[] = [
       "Transporte de materiais e trabalhadores na obra. Ideal para obras industriais, infraestrutura e civis.",
     icon: IconElevator,
     href: "/rf-locacao/elevador-cremalheira",
-    image: "/images/equipment/elevador-cremalheira.jpg",
+    image: "/images/equipment/elevador-cremalheira-2.jpg",
     features: [
       "Transporte vertical",
       "Materiais e pessoas",
@@ -76,7 +76,7 @@ export const locacaoEquipments: Equipment[] = [
       "Movimentação de cargas no canteiro de obras. Fácil manuseio, reduz a carga de trabalho manual.",
     icon: IconForklift,
     href: "/rf-locacao/mini-grua",
-    image: "/images/equipment/mini-grua.jpg",
+    image: "/images/equipment/grua.jpg",
     features: [
       "Fácil manuseio",
       "Movimentação de cargas",
@@ -91,7 +91,7 @@ export const locacaoEquipments: Equipment[] = [
       "Guarda-corpo metálico, suportes de bandejas e tubo linha de vida para proteção coletiva em obras.",
     icon: IconShieldCheck,
     href: "/rf-locacao/protecoes-coletivas",
-    image: "/images/equipment/protecoes-coletivas.jpg",
+    image: "/images/equipment/guarda-corpo-foto.jpg",
     features: [
       "Guarda-corpo metálico",
       "Suportes de bandejas",
@@ -106,7 +106,7 @@ export const locacaoEquipments: Equipment[] = [
       "Balancim individual com cadeira suspensa manual. Estrutura metálica resistente e assento ergonômico.",
     icon: IconArmchair,
     href: "/rf-locacao/cadeirinha-cabo-aco",
-    image: "/images/equipment/cadeirinha.jpg",
+    image: "/images/equipment/cadeira-cabo-de-aco.jpg",
     features: [
       "Cadeira suspensa manual",
       "Estrutura metálica",
@@ -121,7 +121,7 @@ export const locacaoEquipments: Equipment[] = [
       "Betoneira, compactador de solo, marteletes, furadeiras, serras, compressores e mais para sua obra.",
     icon: IconTools,
     href: "/rf-locacao/equipamentos-diversos",
-    image: "/images/equipment/equipamentos-diversos.jpg",
+    image: "/images/hero/hero-home-3.jpg",
     features: [
       "Betoneira",
       "Compactador de solo",
@@ -136,7 +136,7 @@ export const locacaoEquipments: Equipment[] = [
       "Mini-grua, velox, guincho de coluna e talha para movimentação vertical de cargas na obra.",
     icon: IconArrowBadgeUp,
     href: "/rf-locacao/icamento",
-    image: "/images/equipment/mini-grua.jpg",
+    image: "/images/equipment/guindaste.jpg",
     features: [
       "Mini-Grua",
       "Velox",

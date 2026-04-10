@@ -11,6 +11,7 @@ import {
   IconStairs,
   IconCrane,
   IconLayoutGrid,
+  IconAnchor,
 } from "@tabler/icons-react";
 
 type IconType = React.ComponentType<{ className?: string }>;
@@ -126,6 +127,7 @@ export const engenhariaProducts: Service[] = [
       "Solução ideal para indústrias com grandes telhados ou tanques. Minimiza perfurações no telhado.",
     icon: IconHome,
     href: "/rf-engenharia/produtos/kit-linha-vida-telhados",
+    image: "/images/linha-de-vida/kit-linha-vida-telhados.webp",
   },
   {
     title: "Linha de Vida para Concretagem",
@@ -134,6 +136,7 @@ export const engenhariaProducts: Service[] = [
       "Sistema de linha de vida específico para etapas de concretagem em obras civis.",
     icon: IconWall,
     href: "/rf-engenharia/produtos/linha-vida-concretagem",
+    image: "/images/linha-de-vida/linha-vida-concretagem.jpg",
   },
   {
     title: "Linha de Vida para Escadas Marinheiro",
@@ -142,6 +145,7 @@ export const engenhariaProducts: Service[] = [
       "Sistema de proteção para escadas tipo marinheiro com cabo de aço e dispositivos de segurança.",
     icon: IconLadder,
     href: "/rf-engenharia/produtos/linha-vida-escadas-marinheiro",
+    image: "/images/linha-de-vida/linha-vida-escadas-marinheiro.jpg",
   },
   {
     title: "Escada Marinheiro",
@@ -150,6 +154,7 @@ export const engenhariaProducts: Service[] = [
       "Fabricação de escadas marinheiro em aço para acesso a coberturas e áreas elevadas.",
     icon: IconStairs,
     href: "/rf-engenharia/produtos/escada-marinheiro",
+    image: "/images/linha-de-vida/linha-vida-escadas-marinheiro.jpg",
   },
   {
     title: "Gaiola para Grua",
@@ -158,6 +163,7 @@ export const engenhariaProducts: Service[] = [
       "Gaiola para elevação e transporte de materiais no canteiro de obras com grua.",
     icon: IconLayoutGrid,
     href: "/rf-engenharia/produtos/gaiola-grua",
+    image: "/images/equipment/gaiola-grua.png",
   },
   {
     title: "Plataforma de Grua",
@@ -166,5 +172,15 @@ export const engenhariaProducts: Service[] = [
       "Plataforma de grua para movimentação segura de cargas no canteiro de obras.",
     icon: IconCrane,
     href: "/rf-engenharia/produtos/plataforma-grua",
+    image: "/images/equipment/plataforma-grua.jpg",
+  },
+  {
+    title: "Material para Ancoragem",
+    slug: "material-ancoragem",
+    description:
+      "Fabricantes e distribuidores de materiais para ancoragem predial. Olhal em aço inox certificado, kit completo com barra e chumbador.",
+    icon: IconAnchor,
+    href: "/rf-engenharia/produtos/material-ancoragem",
+    image: "/images/ancoragem/ancoragem-produto.png",
   },
 ];

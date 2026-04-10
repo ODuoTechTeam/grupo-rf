@@ -92,13 +92,12 @@ export default function AndaimeFachadeiroPage() {
             <div className="w-full lg:w-[40%]">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
                 <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
-                <div className="relative rounded-2xl overflow-hidden">
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                   <Image
-                    src="/images/balancim/balancim-03.jpg"
+                    src="/images/equipment/andaime-fachadeiro-2.jpg"
                     alt="Andaime Fachadeiro"
-                    width={600}
-                    height={500}
-                    className="w-full h-auto object-cover"
+                    fill
+                    className="object-cover object-center"
                   />
                 </div>
               </div>

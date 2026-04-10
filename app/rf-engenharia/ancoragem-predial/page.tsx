@@ -235,13 +235,12 @@ export default function AncoragemPredialPage() {
             <div className="w-full lg:w-[40%]">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
                 <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
-                <div className="relative rounded-2xl overflow-hidden">
+                <div className="relative rounded-2xl overflow-hidden aspect-[4/3]">
                   <Image
                     src="/images/ancoragem/ancoragem-01.jpg"
                     alt="Ancoragem Predial"
-                    width={600}
-                    height={500}
-                    className="w-full h-auto object-cover"
+                    fill
+                    className="object-cover object-center"
                   />
                 </div>
               </div>

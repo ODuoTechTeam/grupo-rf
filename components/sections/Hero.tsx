@@ -172,13 +172,12 @@ export default function Hero({
               <div className="relative">
                 {/* Decorative frame */}
                 <div className="absolute -inset-3 bg-gradient-to-br from-primary-medium/20 via-primary-pale to-transparent rounded-2xl blur-sm" />
-                <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10">
+                <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-primary-medium/10 aspect-[4/3]">
                   <Image
                     src={image}
                     alt={imageAlt}
-                    width={640}
-                    height={480}
-                    className="w-full h-auto object-cover"
+                    fill
+                    className="object-cover object-center"
                     priority
                   />
                   {/* Subtle overlay gradient */}
