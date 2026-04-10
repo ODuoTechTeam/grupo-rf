@@ -974,6 +974,7 @@ export default function AdsHero({
               </a>
               <a
                 href={telHref}
+                aria-label={`Ligar para ${contact.tollFree}`}
                 data-ads-cta="phone"
                 data-ads-lp={lpSlug}
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg border-2 border-gray-300 text-gray-800 font-semibold text-lg hover:bg-gray-50 transition-colors"
@@ -992,8 +993,8 @@ export default function AdsHero({
                     key={logo.src}
                     src={logo.src}
                     alt={logo.alt}
-                    width={90}
-                    height={40}
+                    width={80}
+                    height={32}
                     className="h-8 w-auto object-contain grayscale opacity-70"
                   />
                 ))}
@@ -1014,6 +1015,7 @@ export default function AdsHero({
                   src={heroImage}
                   alt={heroImageAlt}
                   fill
+                  sizes="(min-width: 1024px) 40vw, 100vw"
                   className="object-cover object-center"
                   priority
                 />
