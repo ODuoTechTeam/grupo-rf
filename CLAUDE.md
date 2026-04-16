@@ -33,24 +33,26 @@ No test framework is configured.
 
 ### Routing
 
-Next.js App Router with file-based routing. Two main route trees:
+Next.js App Router with file-based routing. The app is split into two route groups with distinct chrome:
 
-- `/rf-engenharia/` — 6 service subcategories + `/produtos/` with 7 product pages
-- `/rf-locacao/` — 8 equipment subcategories (each a static route, not dynamic)
-- `/blog/[slug]` — Dynamic blog routes (only dynamic route in the project)
-- `/contato/`, `/sobre/`, `/portfolio/` — Static pages
+- `app/(site)/` — institutional site. Wraps pages with `Header` + `Footer` + `FloatingWhatsApp` via `(site)/layout.tsx`. Contains `rf-engenharia/` (6 service subcategories + `produtos/` with 7 product pages), `rf-locacao/` (8 equipment subcategories — each a static route, not dynamic), `blog/[slug]` (only dynamic route in the project), and `contato/`, `sobre/`, `portfolio/`.
+- `app/(ads)/` — paid-traffic landing pages at `/lp/<slug>` (currently `ancoragem`, `balancim-eletrico`, `linha-de-vida`) plus `politica-de-privacidade`. Uses a separate `(ads)/layout.tsx` with `AdsTopBar` + `AdsFooter` (no site Header, no FloatingWhatsApp) and exports `robots: { index: false, follow: false }` at the layout level — everything under `(ads)` is noindex by default.
 
-Per-page SEO uses two different patterns. `rf-engenharia/<service>/` folders each have their own `layout.tsx` exporting `Metadata` (so the page can be a client component with `"use client"`). `rf-locacao/` has a single shared `layout.tsx` at the top level, and its subcategory pages — plus all `produtos/<product>/page.tsx` — export `metadata` directly from the page file (so they stay as server components). Root layout uses `title.template: "%s | Grupo RF Engenharia"`.
+Root `app/layout.tsx` is minimal: it only loads fonts and sets the default metadata/title template (`"%s | Grupo RF Engenharia"`). All page chrome comes from the route-group layouts.
+
+Per-page SEO uses two different patterns. `rf-engenharia/<service>/` folders each have their own `layout.tsx` exporting `Metadata` (so the page can be a client component with `"use client"`). `rf-locacao/` has a single shared `layout.tsx` at the top level, and its subcategory pages — plus all `produtos/<product>/page.tsx` and all `(ads)/lp/<slug>/page.tsx` — export `metadata` directly from the page file (so they stay as server components).
 
 ### Directory Structure
 
-- `app/` — Pages and layouts (App Router)
-- `components/layout/` — Header, Footer (shared via root layout)
+- `app/` — Pages and layouts (App Router), split into `(site)/` and `(ads)/` route groups
+- `components/layout/` — `Header`, `Footer` (used by the `(site)` layout)
+- `components/ads/` — Ads-only components (`AdsTopBar`, `AdsHero`, `AdsBenefitsGrid`, `AdsSocialProof`, `AdsTrustBadges`, `AdsFinalCta`, `AdsStickyMobileCta`, `AdsFooter`) plus `whatsapp.ts` helper. **Do not reuse these in institutional pages** — see `components/ads/README.md`.
 - `components/cards/` — Content cards (Blog, Equipment, Feature, Product, Service)
 - `components/sections/` — Full-width page sections (Hero, CTA, ProcessSteps, Timeline, etc.)
 - `components/ui/` — Base UI primitives (Animations, Button, Breadcrumb, FloatingWhatsApp, IconBox, SectionTitle, BeforeAfterSlider)
 - `data/` — All site content as typed TypeScript arrays (services, equipment, blog, navigation, etc.)
 - `public/images/` — Static assets organized by type (hero, equipment, clients, portfolio, etc.)
+- `docs/` — Planning docs (`docs/plans/`) and design reference screenshots (`docs/reference/`). Not shipped.
 
 ### Data Layer
 
@@ -86,6 +88,16 @@ CSS custom properties in `app/globals.css`, registered for Tailwind via `@theme 
 ### Navigation
 
 Header uses `data/navigation.ts`. `NavItem.group` groups children into labeled sections in desktop dropdowns (e.g., "Servicos" and "Produtos" under RF Engenharia). Header is scroll-aware: hides on scroll down, shows on scroll up, top bar collapses at 50px.
+
+### Ads landing pages
+
+Landing pages under `app/(ads)/lp/*` are conversion-focused and follow a separate playbook from the institutional site. Full details in `components/ads/README.md` — key rules:
+
+- **CTAs go directly to WhatsApp** with a pre-filled message (use `buildWhatsAppHref` from `components/ads/whatsapp.ts`). No contact forms.
+- **Tracking is attribute-based**: every CTA carries `data-ads-cta="whatsapp"|"phone"` and `data-ads-lp="<slug>"` so a single GTM listener can capture all clicks without touching components. GTM is not installed yet; the hook point is the `// TRACKING:` comment in `(ads)/layout.tsx`.
+- **Do not add `onClick` handlers to `Ads*` components** — it forces them into client components and defeats the server-rendered bundle. All click tracking belongs in GTM.
+- **`AdsTopBar` reports `data-ads-lp="generic"`** because it's rendered by the route-group layout without access to child-page props. The hero, final CTA, and sticky mobile CTA report the real slug.
+- Everything under `(ads)` is `noindex` via the layout's metadata — don't override per page.
 
 ## Language
 
