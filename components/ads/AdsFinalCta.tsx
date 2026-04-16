@@ -11,6 +11,7 @@ interface AdsFinalCtaProps {
   description: string;
   whatsappMessage: string;
   lpSlug: string;
+  ctaLabel?: string;
 }
 
 export default function AdsFinalCta({
@@ -18,6 +19,7 @@ export default function AdsFinalCta({
   description,
   whatsappMessage,
   lpSlug,
+  ctaLabel = "Quero orçamento completo",
 }: AdsFinalCtaProps) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
@@ -72,7 +74,7 @@ export default function AdsFinalCta({
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-whatsapp text-white font-bold rounded-lg hover:bg-whatsapp-dark transition-colors text-lg shadow-lg"
           >
             <IconBrandWhatsapp className="w-6 h-6" />
-            Falar no WhatsApp
+            {ctaLabel}
           </a>
           <a
             href={telHref}
