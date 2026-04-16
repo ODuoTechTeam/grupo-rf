@@ -4,11 +4,13 @@ import { buildWhatsAppHref } from "./whatsapp";
 interface AdsStickyMobileCtaProps {
   whatsappMessage: string;
   lpSlug: string;
+  ctaLabel?: string;
 }
 
 export default function AdsStickyMobileCta({
   whatsappMessage,
   lpSlug,
+  ctaLabel = "Falar agora",
 }: AdsStickyMobileCtaProps) {
   const whatsappHref = buildWhatsAppHref(whatsappMessage);
 
@@ -23,7 +25,7 @@ export default function AdsStickyMobileCta({
         className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-whatsapp text-white font-bold text-base"
       >
         <IconBrandWhatsapp className="w-6 h-6" />
-        Falar no WhatsApp
+        {ctaLabel}
       </a>
     </div>
   );
