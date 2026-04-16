@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  IconBusinessplan,
+  IconSchema,
   IconTool,
   IconAnchor,
   IconShieldCheck,
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 const PILLARS = [
   {
-    icon: IconBusinessplan,
+    icon: IconSchema,
     title: "Projeto técnico",
     description:
       "Cálculo estrutural e definição dos pontos por engenheiro CREA, conforme carga e layout do edifício.",

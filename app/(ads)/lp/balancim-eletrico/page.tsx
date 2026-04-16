@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import {
-  IconBlueprint,
+  IconSchema,
   IconTool,
   IconBuildingSkyscraper,
   IconShieldCheck,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 const PILLARS = [
   {
-    icon: IconBlueprint,
+    icon: IconSchema,
     title: "Projeto técnico",
     description:
       "Memorial de cálculo e projeto de instalação assinados por engenheiro CREA.",
