@@ -146,9 +146,9 @@ export default function BalancimEletricoLandingPage() {
   return (
     <div className="pb-24 md:pb-0">
       <AdsHero
-        badge="Solução Completa para Fachadas"
-        title="Balancim elétrico entregue pronto: projeto, montagem, equipamento e segurança."
-        subtitle="Mais que locação. Sua fachada resolvida por engenheiros CREA — com ART, laudo, montagem e acompanhamento em obra. Filiais próprias em Brasília, Goiânia e São Paulo."
+        badge="Balancim Elétrico"
+        title="Solução completa em balancim elétrico."
+        subtitle="Mais que locação. Sua fachada resolvida por engenheiros CREA — com ART, laudo, montagem e acompanhamento em obra."
         whatsappMessage={WHATSAPP_MESSAGE}
         heroImage="/images/balancim/balancim-08.jpg"
         heroImageAlt="Balancim elétrico em operação em obra de fachada"

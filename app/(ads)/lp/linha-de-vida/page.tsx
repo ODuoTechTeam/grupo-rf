@@ -172,9 +172,9 @@ export default function LinhaDeVidaLandingPage() {
   return (
     <div className="pb-24 md:pb-0">
       <AdsHero
-        badge="Solução Completa em Segurança em Altura"
-        title="Linha de vida resolvida: projeto, instalação, impermeabilização e certificação."
-        subtitle="Sistema flexível ou rígido para edifícios, galpões e indústrias. Projeto CREA, instalação sem infiltração e toda a documentação entregue. Filiais próprias em Brasília, Goiânia e São Paulo."
+        badge="Linha de Vida"
+        title="Solução completa em linha de vida."
+        subtitle="Sistema flexível ou rígido para edifícios, galpões e indústrias. Projeto CREA, instalação sem infiltração e toda a documentação entregue."
         whatsappMessage={WHATSAPP_MESSAGE}
         heroImage="/images/linha-de-vida/linha-vida-01.jpg"
         heroImageAlt="Linha de vida instalada em cobertura industrial"

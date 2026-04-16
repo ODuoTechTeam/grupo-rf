@@ -17,14 +17,6 @@ interface AdsHeroProps {
   ctaLabel?: string;
 }
 
-const TRUST_LOGOS = [
-  { src: "/images/clients/cliente-bb.jpg", alt: "Banco do Brasil" },
-  { src: "/images/clients/cliente-caixa.jpg", alt: "Caixa Econômica Federal" },
-  { src: "/images/clients/cliente-sirio-libanes.jpg", alt: "Hospital Sírio-Libanês" },
-  { src: "/images/clients/cliente-mrv.png", alt: "MRV" },
-  { src: "/images/clients/cliente-odebrecht.jpg", alt: "Odebrecht" },
-];
-
 const FILIAIS = ["Brasília", "Goiânia", "São Paulo"];
 
 export default function AdsHero({
@@ -45,7 +37,7 @@ export default function AdsHero({
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row gap-12 items-center">
           <motion.div
-            className="w-full lg:w-[60%]"
+            className="w-full lg:w-1/2"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -86,7 +78,7 @@ export default function AdsHero({
               <p className="text-xs uppercase tracking-widest text-text-light/70 mb-3">
                 Filiais próprias em:
               </p>
-              <div className="flex flex-wrap items-center gap-2 mb-8">
+              <div className="flex flex-wrap items-center gap-2">
                 {FILIAIS.map((city) => (
                   <span
                     key={city}
@@ -97,26 +89,11 @@ export default function AdsHero({
                   </span>
                 ))}
               </div>
-              <p className="text-xs uppercase tracking-widest text-text-light/70 mb-4">
-                Confiança de quem já contratou:
-              </p>
-              <div className="flex flex-wrap items-center gap-6">
-                {TRUST_LOGOS.map((logo) => (
-                  <Image
-                    key={logo.src}
-                    src={logo.src}
-                    alt={logo.alt}
-                    width={80}
-                    height={32}
-                    className="h-8 w-auto object-contain grayscale opacity-70"
-                  />
-                ))}
-              </div>
             </div>
           </motion.div>
 
           <motion.div
-            className="w-full lg:w-[40%]"
+            className="w-full lg:w-1/2"
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}

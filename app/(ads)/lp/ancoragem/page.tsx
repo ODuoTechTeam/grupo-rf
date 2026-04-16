@@ -176,9 +176,9 @@ export default function AncoragemLandingPage() {
   return (
     <div className="pb-24 md:pb-0">
       <AdsHero
-        badge="Solução Completa em Segurança Predial"
-        title="Ancoragem predial resolvida: projeto, fabricação, instalação e ART inclusa."
-        subtitle="Pontos em aço inox rastreável com teste de arrancamento 100% e documentação pronta para auditoria. Engenharia completa, do cálculo à certificação. Filiais próprias em Brasília, Goiânia e São Paulo."
+        badge="Ancoragem Predial"
+        title="Solução completa em ancoragem predial."
+        subtitle="Pontos em aço inox rastreável com teste de arrancamento 100% e documentação pronta para auditoria. Engenharia completa, do cálculo à certificação."
         whatsappMessage={WHATSAPP_MESSAGE}
         heroImage="/images/ancoragem/ancoragem-01.jpg"
         heroImageAlt="Ponto de ancoragem predial instalado em estrutura"
