@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { IconBrandWhatsapp, IconPhone } from "@tabler/icons-react";
+import { IconBrandWhatsapp, IconPhone, IconMapPin } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import { contact } from "@/data/contact";
 import { buildWhatsAppHref } from "./whatsapp";
@@ -14,6 +14,7 @@ interface AdsHeroProps {
   heroImage: string;
   heroImageAlt: string;
   lpSlug: string;
+  ctaLabel?: string;
 }
 
 const TRUST_LOGOS = [
@@ -24,6 +25,8 @@ const TRUST_LOGOS = [
   { src: "/images/clients/cliente-odebrecht.jpg", alt: "Odebrecht" },
 ];
 
+const FILIAIS = ["Brasília", "Goiânia", "São Paulo"];
+
 export default function AdsHero({
   badge,
   title,
@@ -32,6 +35,7 @@ export default function AdsHero({
   heroImage,
   heroImageAlt,
   lpSlug,
+  ctaLabel = "Falar com especialista",
 }: AdsHeroProps) {
   const whatsappHref = buildWhatsAppHref(whatsappMessage);
   const telHref = `tel:${contact.tollFree.replace(/\s/g, "")}`;
@@ -65,7 +69,7 @@ export default function AdsHero({
                 className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-lg bg-whatsapp text-white font-bold text-lg hover:bg-whatsapp-dark transition-colors shadow-lg"
               >
                 <IconBrandWhatsapp className="w-6 h-6" />
-                Falar no WhatsApp
+                {ctaLabel}
               </a>
               <a
                 href={telHref}
@@ -79,6 +83,20 @@ export default function AdsHero({
               </a>
             </div>
             <div className="mt-10">
+              <p className="text-xs uppercase tracking-widest text-text-light/70 mb-3">
+                Filiais próprias em:
+              </p>
+              <div className="flex flex-wrap items-center gap-2 mb-8">
+                {FILIAIS.map((city) => (
+                  <span
+                    key={city}
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium bg-white text-gray-800 border border-gray-300"
+                  >
+                    <IconMapPin className="w-4 h-4 text-primary-medium" />
+                    {city}
+                  </span>
+                ))}
+              </div>
               <p className="text-xs uppercase tracking-widest text-text-light/70 mb-4">
                 Confiança de quem já contratou:
               </p>
