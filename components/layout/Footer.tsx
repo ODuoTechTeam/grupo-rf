@@ -229,8 +229,12 @@ export default function Footer() {
                   <MapPin className="w-4 h-4 text-primary-medium mt-0.5 shrink-0" />
                   <span>
                     {office.city}/{office.state}
-                    <br />
-                    <span className="text-gray-500 text-xs">{office.address}</span>
+                    {office.address && (
+                      <>
+                        <br />
+                        <span className="text-gray-500 text-xs">{office.address}</span>
+                      </>
+                    )}
                   </span>
                 </li>
               ))}

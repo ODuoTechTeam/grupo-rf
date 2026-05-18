@@ -2,7 +2,7 @@ export interface Office {
   city: string;
   state: string;
   phones: string[];
-  address: string;
+  address?: string;
   cep?: string;
   mapQuery?: string;
 }
@@ -19,9 +19,6 @@ export const offices: Office[] = [
     city: "Goiânia",
     state: "GO",
     phones: ["(62) 99312-7838", "(62) 3142-6272"],
-    address: "Av. Perimetral Norte, 8303 - Vila João Vaz",
-    cep: "74473-485",
-    mapQuery: "Av+Perimetral+Norte+8303+Vila+Joao+Vaz+Goiania+GO",
   },
   {
     city: "São Paulo",

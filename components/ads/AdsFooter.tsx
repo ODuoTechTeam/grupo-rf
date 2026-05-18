@@ -22,7 +22,7 @@ export default function AdsFooter() {
               <p className="text-gray-200 font-semibold">
                 {office.city} / {office.state}
               </p>
-              <p>{office.address}</p>
+              {office.address && <p>{office.address}</p>}
               {office.cep && <p>CEP {office.cep}</p>}
               <p>{office.phones.join(" · ")}</p>
             </div>
